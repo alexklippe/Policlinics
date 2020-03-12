@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "site", "site", "{69AB2E7E-9DE5-4859-BCF6-9521DD40613C}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		Debug.AspNetCompiler.VirtualPath = "/site"
+		Debug.AspNetCompiler.PhysicalPath = "site\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\site\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/site"
+		Release.AspNetCompiler.PhysicalPath = "site\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\site\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "54594"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "site2", "site2\site2.csproj", "{2905216E-0825-41D7-9E3A-20EE9FC86E3F}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database1", "Database1\Database1.sqlproj", "{EC85C50B-1DE8-4CB8-B834-14BDF5BAACFC}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://alexklippe.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = site2\\site2.csproj
+		SccProjectName1 = site2
+		SccLocalPath1 = site2
+		SccWebProject2 = true
+		SccProjectUniqueName2 = site
+		SccProjectName2 = site
+		SccLocalPath2 = D:\\ALL\\dev_VS\\wmtaganrog.ru\\Tag_MBUZ_GP2\\site\\site\\
+		SccProjectEnlistmentChoice2 = 2
+		SccProjectUniqueName3 = Database1\\Database1.sqlproj
+		SccProjectName3 = Database1
+		SccLocalPath3 = Database1
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69AB2E7E-9DE5-4859-BCF6-9521DD40613C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69AB2E7E-9DE5-4859-BCF6-9521DD40613C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69AB2E7E-9DE5-4859-BCF6-9521DD40613C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{69AB2E7E-9DE5-4859-BCF6-9521DD40613C}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{2905216E-0825-41D7-9E3A-20EE9FC86E3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2905216E-0825-41D7-9E3A-20EE9FC86E3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2905216E-0825-41D7-9E3A-20EE9FC86E3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2905216E-0825-41D7-9E3A-20EE9FC86E3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC85C50B-1DE8-4CB8-B834-14BDF5BAACFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC85C50B-1DE8-4CB8-B834-14BDF5BAACFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC85C50B-1DE8-4CB8-B834-14BDF5BAACFC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EC85C50B-1DE8-4CB8-B834-14BDF5BAACFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC85C50B-1DE8-4CB8-B834-14BDF5BAACFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC85C50B-1DE8-4CB8-B834-14BDF5BAACFC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

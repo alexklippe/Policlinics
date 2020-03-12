@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+    <title>Запись на прием с сайта</title>
+</head>
+<body>
+    <h2>Произведена запись Пациента</h2>
+    <form action='https://zap.sp1taganrog.ru/accept' method='post'>
+        <fieldset>
+            <p>Фамилия:</p>
+            <p>Имя:</p>
+            <p>Отчество:</p>
+            <p>Дата рождения:</p>
+            <p>Пол:</p>
+            <p>Адрес:</p>
+            <p>Страховой полис номер:</p>
+            <p>Страховой полис организация:</p>
+            <br />
+            <p>Специальность врача:</p>
+            <p>Врач:</p>
+            <br />
+            <p>Дата/время талона:</p>
+            <p>Номер талона:</p>
+            <br />
+            <p>E-mail пациента:</p>
+            <p>Телефон пациента:</p>
+            <br />
+            <input id='HiddenIDTALON' name='HiddenIDTALON'  type='hidden' value='' />
+
+            <select id='Select1' name='Select1'>
+                <option value='1' selected >Подтверждаю запись на прием</option>
+                <option value='2'>ОТКАЗЫВАЮ в записи на прием</option>
+                
+
+            </select>
+            <p>Причина отказа:</p>
+            <textarea id='TextOtkaza' name='TextOtkaza' type='text' cols='100' rows='5' ></textarea><br />
+
+            <input type='submit' value='Отправить' formtarget='_blank'>
+
+           
+
+        </fieldset>
+    </form>
+</body>
+</html>

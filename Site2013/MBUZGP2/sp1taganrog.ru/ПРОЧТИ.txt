@@ -1,0 +1,7 @@
+﻿Источник дизайна 
+
+http://www.templatemonster.com/demo/51357.html
+
+ну можно и это http://www.templatemonster.com/demo/54949.html
+
+описание bootstrap css http://hypercoder.ru/bootstrap-dropdown-kak-sdelat-vypadaushee-menu-po-hover-effektu.html

@@ -1,0 +1,142 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.Mobile.master.vb" Inherits="sp1taganrog.ru.Site_Mobile" %>
+
+<%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+   <%-- <meta name="viewport" content="width=device-width" />--%>
+    
+   <%-- <asp:ContentPlaceHolder runat="server" ID="HeadContent" />--%>
+
+
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="author" content="Aleksandr Salnikov" />
+    <meta name="author_email" content="alex@jabbam.net" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Стоматологическая поликлиника №1 г.Таганрога</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+            <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--Дополнительные сведения об объединении сценариев в ScriptManager см. по адресу: http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Сценарии .NET Framework--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+              <%--  <asp:ScriptReference Name="WebFormsBundle" />--%>
+                <%--Сценарии сайта--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+    <div>
+              <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                   <a class="navbar-brand" runat="server" href="~/">
+                       <asp:Image ID="Image1" runat="server" ImageUrl="~/img/logo.png" Width="25px" Height="25px" /></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown"><a runat="server" href="~/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Поликлиника<span class="caret"></span></a>
+                            <ul class="dropdown-menu" ><li><a runat="server" href="~/Policlinic/Structure.aspx">Структура</a></li>
+                                <li><a runat="server" href="~/WorkTime">Режим работы</a></li>
+                                <li><a runat="server" href="~/Policlinic/Route">Как добраться..</a></li>
+                                <li><a runat="server" href="~/Docs/Doctors">Сведения о медицинских работниках</a></li>
+                                </ul>
+
+                        </li>
+                        <li class="dropdown">
+                            <a runat="server" href="~/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Услуги<span class="caret"></span></a>
+                            <ul class="dropdown-menu" ><li><a runat="server" href="~/Uslugi/VidUslug">Виды медицинской помощи</a></li>
+                                <li><a runat="server" href="~/Uslugi/PriceStatic">Прейскурант на платные услуги</a></li>
+                                </ul>
+
+
+                        </li>
+                           <li class="dropdown"><a runat="server" href="~/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Документы<span class="caret"></span></a>
+                            <ul class="dropdown-menu" >
+                                <li><a runat="server" href="~/Docs/Reglament">Регламентные документы</a></li>
+                                <li><a runat="server" href="~/Docs/Links">Главные ссылки</a></li>
+                                <li><a runat="server" href="~/Docs/perechenLS">Перечень лекарственных средств</a></li>
+                                <li><a runat="server" href="~/Docs/Pamyatka">Памятка при направлении в РОКБ</a></li>
+                                
+                                </ul>
+
+                        </li>
+                         <li class="dropdown"><a runat="server" href="~/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Правила<span class="caret"></span></a>
+                            <ul class="dropdown-menu" >
+                                 <li><a runat="server" href="~/Docs/Polozhenije">Предоставление медицинской помощи</a></li>
+                                <li><a runat="server" href="~/Docs/Usloviya">Условия оказания помощи</a></li>
+                                <li><a runat="server" href="~/Docs/Rules">Правила поведения пациентов</a></li>
+                                <li><a runat="server" href="~/Docs/FedRules">Права и обязанности граждан</a></li>
+                                <li><a runat="server" href="~/Docs/Narush">Нарушение режима</a></li>
+                                <%--<li><a runat="server" href="~/Docs/Usloviya">Условия оказания помощи</a></li>
+                                <li><a runat="server" href="~/Docs/Narush">Нарушение режима</a></li>
+                                <li><a runat="server" href="~/Docs/perechenLS">Перечень лекарственных средств</a></li>--%>
+                                </ul>
+
+                        </li>
+                       
+                        
+                        <li><a runat="server" href="~/Contact">Связаться</a></li>
+                    </ul>
+              <%--      <asp:LoginView runat="server" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/Account/Register">Зарегистрироваться</a></li>
+                                <li><a runat="server" href="~/Account/Login">Вход</a></li>
+                            </ul>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %>!</a></li>
+                                <li>
+                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Выход" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                </li>
+                            </ul>
+                        </LoggedInTemplate>
+                    </asp:LoginView>--%>
+                </div>
+            </div>
+           
+        </div>
+        <h1>Стоматологическая поликлиника №1</h1>
+        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        <section class="content-wrapper main-content clear-fix">
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+        </section><p>&copy; <%: DateTime.Now.Year %> - Стоматологическая Поликлиника №1 г.Таганрога. | <a runat="server" href="~/claim">Обратная связь</a></p>
+<%--        <friendlyUrls:ViewSwitcher ID="ViewSwitcher1" runat="server" />--%>
+    </div>
+    </form>
+</body>
+</html>
+

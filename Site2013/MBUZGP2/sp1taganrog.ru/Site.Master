@@ -1,0 +1,293 @@
+﻿<%@ Master Language="VB" AutoEventWireup="true" CodeBehind="Site.master.vb" Inherits="sp1taganrog.ru.SiteMaster" %>
+
+<%@ Import Namespace="sp1taganrog.ru" %>
+<%@ Import Namespace="Microsoft.AspNet.Identity" %>
+<!DOCTYPE html>
+
+<html lang="ru">
+<head runat="server">
+    <link rel="icon" type="image/png" href="~/favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-favicon.png"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="author" content="Aleksandr Salnikov" />
+    <meta name="author_email" content="alex@jabbam.net" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Стоматологическая поликлиника №1 г.Таганрога </title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+  <%--  <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />--%>
+
+     <!-- use Coockie -->
+<script type="text/javascript" id="cookieinfo"
+	src="//cookieinfoscript.com/js/cookieinfo.min.js"
+    data-message="Этот сайт использует Coockie. Продолжая пользоваться сайтом, вы подтверждаете свое согласие на использование Coockie этим сайтом."
+    <script type="text/javascript" id="cookieinfo"
+	src="//cookieinfoscript.com/js/cookieinfo.min.js"
+    data-close-text="Согласен(-на)!"
+    data-linkmsg="Подробнее"
+    data-moreinfo ="https://ru.wikipedia.org/wiki/HTTP_cookie"
+
+    >
+</script>
+
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--Дополнительные сведения об объединении сценариев в ScriptManager см. по адресу: http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Сценарии .NET Framework--%>
+                
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery"/>
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+               <%-- <asp:ScriptReference Name="WebFormsBundle" />--%>
+                <%--Сценарии сайта--%>
+            </Scripts>
+        </asp:ScriptManager>
+        
+        <br />
+        <br />
+
+        <div class="custom_poz0">
+<div class="container">
+    <% If Request.UserHostAddress() = "37.143.11.54" Then%>
+ 
+    <div class=" navbar-static-top">
+            <div >
+                
+                <div >
+                    <ul >
+                        <li >Поликлиника
+                            <ul  ><li><a runat="server" href="~/Policlinic/Structure.aspx">Структура</a></li>
+                                <li><a runat="server" href="~/WorkTime">Режим работы</a></li>
+                                <li><a runat="server" href="~/Vazhno/Booking.aspx">Расписание работы врачей</a></li>
+                                <li><a runat="server" href="~/Policlinic/Route">Как добраться..</a></li>
+                                <li><a runat="server" href="~/Docs/Doctors">Сведения о медицинских работниках</a></li>
+                                <li><a runat="server" href="~/WorkPlace">Организация рабочего места</a></li>
+                                <li><a runat="server" href="~/Vacancy">Вакансии</a></li>
+                                </ul>
+
+                        </li>
+                        <li>
+                            Услуги
+                            <ul  ><li><a runat="server" href="~/Uslugi/VidUslug">Виды медицинской помощи</a></li>
+                                <li><a runat="server" href="~/Uslugi/PriceStatic">Прейскурант на платные услуги</a></li>
+                                </ul>
+
+
+                        </li>
+                           <li>Документы
+                            <ul  >
+                                <li><a runat="server" href="~/Docs/Reglament">Регламентные документы</a></li>
+                                <li><a runat="server" href="~/Docs/Links">Главные ссылки</a></li>
+                                <li><a runat="server" href="~/Docs/perechenLS">Перечень лекарственных средств</a></li>
+                                <li><a runat="server" href="~/Docs/Pamyatka">Памятка при направлении в РОКБ</a></li>
+                                <li><a runat="server" href="~/Docs/PlanService">План мероприятий</a></li>
+                                
+                                </ul>
+
+                        </li>
+                         <li >Правила
+                            <ul >
+                                 <li><a runat="server" href="~/Docs/Polozhenije">Предоставление медицинской помощи (Положение)</a></li>
+                                <li><a runat="server" href="~/Docs/Usloviya">Условия оказания помощи</a></li>
+                                
+                                <li><a runat="server" href="~/Docs/Rules">Правила поведения пациентов</a></li>
+                                <li><a runat="server" href="~/Docs/FedRules">Права и обязанности граждан</a></li>
+                                <li><a runat="server" href="~/Docs/Narush">Нарушение режима</a></li>
+                                <%--<li><a runat="server" href="~/Docs/Usloviya">Условия оказания помощи</a></li>
+                                <li><a runat="server" href="~/Docs/Narush">Нарушение режима</a></li>
+                                <li><a runat="server" href="~/Docs/perechenLS">Перечень лекарственных средств</a></li>--%>
+                                </ul>
+
+                        </li>
+                         <li>Важно знать..
+                            <ul>
+                                 <li><a runat="server" href="~/Vazhno/VICH">Опасность ВИЧ</a></li>
+                              <li><a runat="server" href="~/Vazhno/GRIPP">ГРИПП</a></li>
+                                <li><a runat="server" href="~/Vazhno/Vakcine">Вакцинация</a></li>
+                                <li><a runat="server" href="~/Vazhno/Osteoporoz">Остеопороз</a></li>
+                                <li><a runat="server" href="~/Vazhno/ZOZH">Здоровый образ жизни</a></li>
+                                <li><a runat="server" href="~/Vazhno/lawyers.aspx">Бесплатная Юридическая помощь</a></li>
+                                </ul>
+
+                        </li>
+                       
+                        
+                        <li><a runat="server" href="~/Contact">Связаться</a></li>
+                      <li>
+
+
+
+</li>
+                    </ul>
+                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                            <%--    <li><a runat="server" href="~/Account/Register">Зарегистрироваться</a></li>--%>
+                                <li><a runat="server" href="~/Account/Login">Вход</a></li>
+                            </ul>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %>!</a></li>
+                                <li>
+                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Выход" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                </li>
+                            </ul>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+            </div>
+           
+        </div>
+    <% Else %>
+       <div id="fvb" itemprop="Copy" style="z-index:99;background:#fff;position:fixed;right:0;top:0;
+border:2px solid #000;"><a href="https://finevision.ru/?hostname=sp1taganrog.ru&path=/">
+Версия для слабовидящих</a></div>
+      <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                   <a class="navbar-brand" runat="server" href="~/">
+                       <asp:Image ID="Image1" runat="server" ImageUrl="~/img/logo.png" Width="25px" Height="25px" /></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown"><a runat="server" href="~/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Поликлиника<span class="caret"></span></a>
+                            <ul class="dropdown-menu" ><li><a runat="server" href="~/Policlinic/Structure.aspx">Структура</a></li>
+                                <li><a runat="server" href="~/WorkTime">Режим работы</a></li>
+                                <li><a runat="server" href="~/Vazhno/Booking.aspx">Расписание работы врачей</a></li>
+                                <li><a runat="server" href="~/Policlinic/Route">Как добраться..</a></li>
+                                <li><a runat="server" href="~/Docs/Doctors">Сведения о медицинских работниках</a></li>
+                                <li><a runat="server" href="~/WorkPlace">Организация рабочего места</a></li>
+                                 <li><a runat="server" href="~/Vacancy">Вакансии</a></li>
+                                </ul>
+
+                        </li>
+                        <li class="dropdown">
+                            <a runat="server" href="~/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Услуги<span class="caret"></span></a>
+                            <ul class="dropdown-menu" ><li><a runat="server" href="~/Uslugi/VidUslug">Виды медицинской помощи</a></li>
+                                <li><a runat="server" href="~/Uslugi/PriceStatic">Прейскурант на платные услуги</a></li>
+                                </ul>
+
+
+                        </li>
+                           <li class="dropdown"><a runat="server" href="~/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Документы<span class="caret"></span></a>
+                            <ul class="dropdown-menu" >
+                                <li><a runat="server" href="~/Docs/Reglament">Регламентные документы</a></li>
+                                <li><a runat="server" href="~/Docs/files/2019/Памятка_для_граждан_о_гарантиях_бесплатного_оказания_медицинской_помощи.pdf" target="_blank">Памятка гос. гарантий бесплатного оказания мед. помощи</a></li>
+                                <li><a runat="server" href="~/Docs/Links">Главные ссылки</a></li>
+                                <li><a runat="server" href="~/Docs/perechenLS">Перечень лекарственных средств</a></li>
+                                <li><a runat="server" href="~/Docs/Pamyatka">Памятка при направлении в РОКБ</a></li>
+                                <li><a runat="server" href="~/Docs/PlanService">План мероприятий</a></li>
+                                
+                                </ul>
+
+                        </li>
+                         <li class="dropdown"><a runat="server" href="~/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Правила<span class="caret"></span></a>
+                            <ul class="dropdown-menu" >
+                                 <li><a runat="server" href="~/Docs/Polozhenije">Предоставление медицинской помощи (Положение)</a></li>
+                                <li><a runat="server" href="~/Docs/Usloviya">Условия оказания помощи</a></li>
+                                
+                                <li><a runat="server" href="~/Docs/Rules">Правила поведения пациентов</a></li>
+                                <li><a runat="server" href="~/Docs/FedRules">Права и обязанности граждан</a></li>
+                                <li><a runat="server" href="~/Docs/Narush">Нарушение режима</a></li>
+                                <%--<li><a runat="server" href="~/Docs/Usloviya">Условия оказания помощи</a></li>
+                                <li><a runat="server" href="~/Docs/Narush">Нарушение режима</a></li>
+                                <li><a runat="server" href="~/Docs/perechenLS">Перечень лекарственных средств</a></li>--%>
+                                </ul>
+
+                        </li>
+                         <li class="dropdown"><a runat="server" href="~/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Важно знать..<span class="caret"></span></a>
+                            <ul class="dropdown-menu" >
+                                 <li><a runat="server" href="~/Vazhno/VICH">Опасность ВИЧ</a></li>
+                              <li><a runat="server" href="~/Vazhno/GRIPP">ГРИПП</a></li>
+                                <li><a runat="server" href="~/Vazhno/Vakcine">Вакцинация</a></li>
+                                <li><a runat="server" href="~/Vazhno/Osteoporoz">Остеопороз</a></li>
+                                 <li><a runat="server" href="~/Vazhno/d/dia">Диабет</a></li>
+                                <li><a runat="server" href="~/Vazhno/ZOZH">Здоровый образ жизни</a></li>
+                                <li><a runat="server" href="~/Vazhno/lawyers.aspx">Бесплатная Юридическая помощь</a></li>
+                                </ul>
+
+                        </li>
+                       
+                        
+                        <li><a runat="server" href="~/Contact">Связаться</a></li>
+                     
+                    </ul>
+                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                            <%--    <li><a runat="server" href="~/Account/Register">Зарегистрироваться</a></li>--%>
+                                <li><a runat="server" href="~/Account/Login">Вход</a></li>
+                            </ul>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %>!</a></li>
+                                <li>
+                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Выход" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                </li>
+                            </ul>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+            </div>
+           
+        </div>
+    <% End If%>
+<div class="row block_head_info" >
+<div class="span4"  style="max-width:1170px">
+ 
+<div class="logo pull-left">
+<a href="../" class="logo_h logo_h__img"><img src="../img/logoHead.png" alt="Стоматологическая поликлиника №1" title=""></a>  <span style="font-size:24px;color:#009345">Стоматологическая поликлиника №1</span>
+</div>
+  
+  </div>
+
+ 
+ <div class="span8 header_widgets" style="text-align:right ">
+<div class="textwidget">МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ УЧРЕЖДЕНИЕ ЗДРАВООХРАНЕНИЯ<br />Регистратура:
+<div class="phone">8 (8634) 679-554</div></div>
+
+</div>
+    <hr />
+</div>
+</div>
+        </div>
+
+      
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Стоматологическая Поликлиника №1 г.Таганрога. | <a runat="server" href="~/claim">Обратная связь</a> |
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Docs/Politika-confidecialnosti.aspx">Политика конфидециальности</asp:HyperLink>
+                </p>
+                 
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

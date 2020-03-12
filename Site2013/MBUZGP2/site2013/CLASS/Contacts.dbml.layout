@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.625, 8.5" name="Contacts">
+  <DataContextMoniker Name="/ContactsDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0799ac03-4561-43ce-8f80-924399154c06" absoluteBounds="6.375, 4.125, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/ContactsDataContext/Dolgnost" />
+      <nestedChildShapes>
+        <elementListCompartment Id="65b530b4-774d-4e31-b5cc-852455217d8b" absoluteBounds="6.39, 4.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8c09f964-734a-4f6d-8e56-53fe69bb8449" absoluteBounds="9.375, 4.5, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/ContactsDataContext/DolgnostCategor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de81ac59-aef7-45a4-bc74-edd400de5751" absoluteBounds="9.39, 4.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.375 : 4.94275024414063); (8.375 : 4.94275024414063)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ContactsDataContext/DolgnostCategor/DolgnostCategor_Dolgnost" />
+      <nodes>
+        <classShapeMoniker Id="8c09f964-734a-4f6d-8e56-53fe69bb8449" />
+        <classShapeMoniker Id="0799ac03-4561-43ce-8f80-924399154c06" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="13633750-eb4b-4319-877e-b9bc102fdf8e" absoluteBounds="9.125, 1.25, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/ContactsDataContext/Sotrudniki" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fa61b0fd-7014-45d7-8017-3fc5b3f78e62" absoluteBounds="9.14, 1.71, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.28125 : 4.125); (8.28125 : 3.45034862109375); (9.125 : 3.45034862109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ContactsDataContext/Dolgnost/Dolgnost_Sotrudniki" />
+      <nodes>
+        <classShapeMoniker Id="0799ac03-4561-43ce-8f80-924399154c06" />
+        <classShapeMoniker Id="13633750-eb4b-4319-877e-b9bc102fdf8e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="822bbc24-f272-4d3c-b312-aab8ae47074a" absoluteBounds="3.875, 4.875, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/ContactsDataContext/NewsTable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="838b6b47-8335-4961-ad51-2f8135812f02" absoluteBounds="3.89, 5.335, 1.9700000000000002, 1.7878011067708333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f4529097-ac2f-4fcc-a71d-74d4a2384187" absoluteBounds="3.625, 1, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/ContactsDataContext/filials" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f4c51182-bed2-417d-9e2e-55a723f340a7" absoluteBounds="3.64, 1.46, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7a31ff38-6b86-42f6-8bb4-8b6b82215eea" absoluteBounds="6.125, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/ContactsDataContext/Cabinet" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2ae1b364-23b6-4e27-9d09-aa975de26d53" absoluteBounds="6.14, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.125 : 1.98159912109375); (9.125 : 1.98159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ContactsDataContext/Cabinet/Cabinet_Sotrudniki" />
+      <nodes>
+        <classShapeMoniker Id="7a31ff38-6b86-42f6-8bb4-8b6b82215eea" />
+        <classShapeMoniker Id="13633750-eb4b-4319-877e-b9bc102fdf8e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.625 : 1.85659912109375); (6.125 : 1.85659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ContactsDataContext/filials/filials_Cabinet" />
+      <nodes>
+        <classShapeMoniker Id="f4529097-ac2f-4fcc-a71d-74d4a2384187" />
+        <classShapeMoniker Id="7a31ff38-6b86-42f6-8bb4-8b6b82215eea" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

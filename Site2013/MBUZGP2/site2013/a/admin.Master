@@ -1,0 +1,29 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="admin.master.vb" Inherits="site2013.admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div><asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource2" Orientation="Horizontal" StaticDisplayLevels="2">
+            </asp:Menu>
+            <asp:LoginStatus ID="LoginStatus1" runat="server" />
+        <asp:LoginName ID="LoginName1" runat="server" />
+            <asp:SiteMapDataSource ID="SiteMapDataSource2" runat="server" SiteMapProvider="AdminSiteMap" />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <asp:LoginView ID="LoginView1" runat="server">
+        </asp:LoginView>
+    </form>
+</body>
+</html>

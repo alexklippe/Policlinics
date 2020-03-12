@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title=""  description="">
+  
+      <siteMapNode url="~/Default.aspx" title="ГЛАВНАЯ"  description="" />
+  
+    <siteMapNode url="~/Filials/Main.aspx?id=11" title="Структура"  description="" >
+    	  <siteMapNode url="~/Filials/Main.aspx?id=12" title="Администрация" description ="" />
+      <siteMapNode url="~/Filials/Main.aspx?id=1" title="Головная поликлиника" description ="" />
+		 <siteMapNode url="~/Filials/Main.aspx?id=3" title="Филиал №1" description ="" />
+		  <siteMapNode url="~/Filials/Main.aspx?id=5" title="Филиал №2" description ="" />
+		  <siteMapNode url="~/Filials/Main.aspx?id=6" title="Филиал №3" description ="" />
+		  <siteMapNode url="~/Filials/Main.aspx?id=7" title="Филиал №4" description ="" />
+		  <siteMapNode url="~/Filials/Main.aspx?id=8" title="Дневной стационар №1" description ="" />
+		  <siteMapNode url="~/Filials/Main.aspx?id=9" title="Дневной стационар №2" description ="" />
+        <siteMapNode url="~/Filials/Main.aspx?id=13" title="Дневной стационар №3" description ="" />
+	
+        <siteMapNode url="~/Docs/angst/врачи на 01.07.2019.pdf" title="Список врачей" description ="" />
+        </siteMapNode>
+        
+        <siteMapNode url="" title="УСЛУГИ"  description="" >
+      <siteMapNode url="~/Uslugi/platnye.aspx" title="Платные" description ="" />
+      <siteMapNode url="~/Uslugi/oms.aspx" title="Бесплатные по полису ОМС" description ="" />
+          <siteMapNode url="~/DD" title="Диспансеризация" description ="" />
+	<siteMapNode url="~/Uslugi/XRay.aspx" title="Рентген-кабинет" description ="" />
+    </siteMapNode>
+        <!--<siteMapNode url="http://Записьнаприем.рф/?f=1&_lpu=75863316@mis_bars"  title="Расписание"  description="" />-->
+		<siteMapNode url="~/Docs/" title="Документы"  description="">
+			
+    
+		</siteMapNode>
+		<siteMapNode url="~/URLs/" title="Ссылки"  description="">
+			
+		</siteMapNode>
+      <siteMapNode url="" title="Новости"  description="">
+		<siteMapNode url="~/News/" title="Новости"  description="" />
+			<siteMapNode url="~/History/Grech.aspx" title="История здания по ул Греческой"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="КОНТАКТЫ"  description="">
+      <siteMapNode url="~/Contacts.aspx" title="КОНТАКТЫ"  description="" />
+      <siteMapNode url="~/Claim/" title="Обратная связь"  description=""/>
+      <siteMapNode url="~/Vacancy.aspx" title="Вакансии"  description=""/>
+    <siteMapNode url="~/info/lawyers.aspx" title="Юридическая помощь"  description=""/>
+    <siteMapNode url="~/about.aspx" title="О нас"  description=""/>
+    </siteMapNode>
+    <siteMapNode url="https://zapisnapriemrostov.ru/?_lpu=75863316@mis_bars" title="Запись на прием"  description="" />
+      
+
+
+      </siteMapNode>
+</siteMap>

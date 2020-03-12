@@ -1,0 +1,151 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="select"] {
+    max-width: 280px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+    .body-content {
+        padding: 0;
+    }
+}
+
+ .phone {
+    position: relative;
+    display: block;
+    font-size: 31px;
+    font-weight: 500;
+    color: #2d2d30;
+    padding: 14px 0 0;
+}
+
+.header {
+	border:none;
+	padding:0;
+	background:#fff;
+}
+.header .block_head_info {
+	position:relative;
+	background:#fff;
+	padding:30px 0 19px;
+	z-index:100;
+}
+.header .block_menu {
+	position:relative;
+	z-index:50;
+}
+.header .block_menu .cont {
+	position:relative;
+	background-color:#008c42;
+	background:linear-gradient(to top,#00863f,#009345);
+}
+.header .block_menu .cont:after, .header .block_menu .cont:before {
+	background-color:#008c42;
+	background:linear-gradient(to top,#00863f,#009345);
+	content:"";
+	position:absolute;
+	top:0;
+	left:-100%;
+	width:100%;
+	height:100%;
+	z-index:-1;
+}
+.header .block_menu .cont:before { left:100%; }
+.header .header_widgets {
+	position:relative;
+	text-align:right;
+}
+.header .header_widgets >div>div {
+	position:relative;
+	display:inline-block;
+	float:right;
+}
+.header .header_widgets .header_soc {
+	position:relative;
+	display:inline-block;
+	margin:16px 15px 0 20px;
+}
+.header .header_widgets .header_info {
+	position:relative;
+	padding:11px 0 0;
+}
+.header .header_widgets .header_info .phone {
+	position:relative;
+	display:block;
+	font-size:31px;
+	font-weight:500;
+	color:#2d2d30;
+	padding:14px 0 0;
+}
+.span8 {
+    /*width: 770px;*/
+}
+
+.textwidget {
+    word-wrap: break-word;
+   /* width:1170px;*/
+}
+.hr-pages hr{
+    height:2px;
+    color:#2d2d30;
+      margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+
+
+}
+
+.imageintext {
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+
+.rules {
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    .banner {
+        display: flex;
+        justify-content: center;
+        width:80%;
+    }
+
+}

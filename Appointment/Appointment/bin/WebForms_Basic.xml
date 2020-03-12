@@ -1,0 +1,3867 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Appointment
+</name>
+</assembly>
+<members>
+<member name="T:Appointment.My.MyWebExtension">
+ <summary>
+ Модуль, используемый для определения свойств, доступных в My Namespace для веб-проектов.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Appointment.My.MyWebExtension.Computer">
+ <summary>
+ Возвращает информацию о главном компьютере.
+ </summary>
+</member>
+<member name="P:Appointment.My.MyWebExtension.User">
+ <summary>
+ Возвращает сведения о текущем веб-пользователе.
+ </summary>
+</member>
+<member name="P:Appointment.My.MyWebExtension.Request">
+ <summary>
+ Возвращает объект Request.
+ </summary>
+</member>
+<member name="P:Appointment.My.MyWebExtension.Response">
+ <summary>
+ Возвращает объект Response.
+ </summary>
+</member>
+<member name="P:Appointment.My.MyWebExtension.Log">
+ <summary>
+ Возвращает объект журнала ASP.
+ </summary>
+</member>
+<member name="T:Appointment.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Appointment.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Appointment.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="F:Appointment.AddPhoneNumber._ErrorMessage">
+<summary>
+Элемент управления ErrorMessage.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.AddPhoneNumber._PhoneNumber">
+<summary>
+Элемент управления PhoneNumber.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Confirm._successPanel">
+<summary>
+Элемент управления successPanel.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Confirm._login">
+<summary>
+Элемент управления login.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Confirm._errorPanel">
+<summary>
+Элемент управления errorPanel.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ForgotPassword._loginForm">
+<summary>
+Элемент управления loginForm.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ForgotPassword._ErrorMessage">
+<summary>
+Элемент управления ErrorMessage.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ForgotPassword._FailureText">
+<summary>
+Элемент управления FailureText.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ForgotPassword._Email">
+<summary>
+Элемент управления Email.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ForgotPassword._DisplayEmail">
+<summary>
+Элемент управления DisplayEmail.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Login._ErrorMessage">
+<summary>
+Элемент управления ErrorMessage.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Login._FailureText">
+<summary>
+Элемент управления FailureText.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Login._Email">
+<summary>
+Элемент управления Email.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Login._Password">
+<summary>
+Элемент управления Password.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Login._RememberMe">
+<summary>
+Элемент управления RememberMe.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Login._RegisterHyperLink">
+<summary>
+Элемент управления RegisterHyperLink.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Login._OpenAuthLogin">
+<summary>
+Элемент управления OpenAuthLogin.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Manage._SuccessMessagePlaceHolder">
+ <summary>
+ Элемент управления SuccessMessagePlaceHolder.
+ </summary>
+ <remarks>
+ Автоматически созданное поле.
+ Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+ </remarks>
+</member>
+<member name="F:Appointment.Manage._ChangePassword">
+ <summary>
+ Элемент управления ChangePassword.
+ </summary>
+ <remarks>
+ Автоматически созданное поле.
+ Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+ </remarks>
+</member>
+<member name="F:Appointment.Manage._CreatePassword">
+ <summary>
+ Элемент управления CreatePassword.
+ </summary>
+ <remarks>
+ Автоматически созданное поле.
+ Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+ </remarks>
+</member>
+<member name="F:Appointment.Manage._PhoneNumber">
+ <summary>
+ Элемент управления PhoneNumber.
+ </summary>
+ <remarks>
+ Автоматически созданное поле.
+ Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+ </remarks>
+</member>
+<member name="F:Appointment.ManageLogins._SuccessMessagePlaceholder">
+<summary>
+Элемент управления SuccessMessagePlaceholder.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ManagePassword._setPassword">
+<summary>
+Элемент управления setPassword.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ManagePassword._password">
+<summary>
+Элемент управления password.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ManagePassword._confirmPassword">
+<summary>
+Элемент управления confirmPassword.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ManagePassword._changePasswordHolder">
+<summary>
+Элемент управления changePasswordHolder.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ManagePassword._CurrentPasswordLabel">
+<summary>
+Элемент управления CurrentPasswordLabel.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ManagePassword._CurrentPassword">
+<summary>
+Элемент управления CurrentPassword.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ManagePassword._NewPasswordLabel">
+<summary>
+Элемент управления NewPasswordLabel.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ManagePassword._NewPassword">
+<summary>
+Элемент управления NewPassword.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ManagePassword._ConfirmNewPasswordLabel">
+<summary>
+Элемент управления ConfirmNewPasswordLabel.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ManagePassword._ConfirmNewPassword">
+<summary>
+Элемент управления ConfirmNewPassword.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.OpenAuthProviders._providerDetails">
+<summary>
+Элемент управления providerDetails.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Register._ErrorMessage">
+<summary>
+Элемент управления ErrorMessage.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Register._Email">
+<summary>
+Элемент управления Email.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Register._Password">
+<summary>
+Элемент управления Password.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Register._ConfirmPassword">
+<summary>
+Элемент управления ConfirmPassword.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.RegisterExternalLogin._email">
+<summary>
+Элемент управления Email.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ResetPassword._ErrorMessage">
+<summary>
+Элемент управления ErrorMessage.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ResetPassword._Email">
+<summary>
+Элемент управления Email.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ResetPassword._Password">
+<summary>
+Элемент управления Password.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ResetPassword._ConfirmPassword">
+<summary>
+Элемент управления ConfirmPassword.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ResetPasswordConfirmation._login">
+<summary>
+Элемент управления login.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.TwoFactorAuthenticationSignIn._sendcode">
+<summary>
+Элемент управления sendcode.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.TwoFactorAuthenticationSignIn._Providers">
+<summary>
+Элемент управления Providers.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.TwoFactorAuthenticationSignIn._ProviderSubmit">
+<summary>
+Элемент управления ProviderSubmit.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.TwoFactorAuthenticationSignIn._verifycode">
+<summary>
+Элемент управления verifycode.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.TwoFactorAuthenticationSignIn._SelectedProvider">
+<summary>
+Элемент управления SelectedProvider.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.TwoFactorAuthenticationSignIn._ErrorMessage">
+<summary>
+Элемент управления ErrorMessage.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.TwoFactorAuthenticationSignIn._FailureText">
+<summary>
+Элемент управления FailureText.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.TwoFactorAuthenticationSignIn._Code">
+<summary>
+Элемент управления Code.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.TwoFactorAuthenticationSignIn._RememberBrowser">
+<summary>
+Элемент управления RememberBrowser.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.TwoFactorAuthenticationSignIn._CodeSubmit">
+<summary>
+Элемент управления CodeSubmit.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.VerifyPhoneNumber._ErrorMessage">
+<summary>
+Элемент управления ErrorMessage.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.VerifyPhoneNumber._PhoneNumber">
+<summary>
+Элемент управления PhoneNumber.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.VerifyPhoneNumber._Code">
+<summary>
+Элемент управления Code.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.accepted._Label1">
+<summary>
+Label1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.accepted._Literal1">
+<summary>
+Literal1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.accepted._Literal2">
+<summary>
+Literal2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.CAlendarItem._Label1">
+<summary>
+Label1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.CAlendarItem._DropDownList3">
+<summary>
+DropDownList3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.CAlendarItem._TextBox6">
+<summary>
+TextBox6 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.CAlendarItem._TextBox2">
+<summary>
+TextBox2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.CAlendarItem._TextBox3">
+<summary>
+TextBox3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.CAlendarItem._ButtonCopy">
+<summary>
+ButtonCopy элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.CAlendarItem._TextBox4">
+<summary>
+TextBox4 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.CAlendarItem._TextBox5">
+<summary>
+TextBox5 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.CAlendarItem._ButtonPaste">
+<summary>
+ButtonPaste элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.CAlendarItem._HiddenFieldIdInBase">
+<summary>
+HiddenFieldIdInBase элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default3._HyperLink1">
+<summary>
+HyperLink1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default3._HyperLink2">
+<summary>
+HyperLink2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default3._HyperLink11">
+<summary>
+HyperLink11 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default3._HyperLink3">
+<summary>
+HyperLink3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default3._HyperLink4">
+<summary>
+HyperLink4 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default3._HyperLink5">
+<summary>
+HyperLink5 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default3._HyperLink6">
+<summary>
+HyperLink6 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default3._HyperLink7">
+<summary>
+HyperLink7 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default3._HyperLink8">
+<summary>
+HyperLink8 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default3._HyperLink9">
+<summary>
+HyperLink9 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default3._HyperLink10">
+<summary>
+HyperLink10 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default3._HyperLink12">
+<summary>
+HyperLink12 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default3._HyperLink13">
+<summary>
+HyperLink13 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default3._HyperLink14">
+<summary>
+HyperLink14 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ListAppClients._Label1">
+<summary>
+Label1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ListAppClients._Button1">
+<summary>
+Button1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ListAppClients._Button2">
+<summary>
+Button2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ListAppClients._Button3">
+<summary>
+Button3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ListAppClients._TextBox1">
+<summary>
+TextBox1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ListAppClients._GridView1">
+<summary>
+GridView1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.ListAppClients._LinqDataSource1">
+<summary>
+LinqDataSource1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._LinqDataSourceFilials">
+<summary>
+LinqDataSourceFilials элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._OrgId">
+<summary>
+OrgId элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._DropDownList1">
+<summary>
+DropDownList1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._DropDownList2">
+<summary>
+DropDownList2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._LinqDataSourceSpec">
+<summary>
+LinqDataSourceSpec элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._BufferStatus">
+<summary>
+BufferStatus элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._BufferInterval">
+<summary>
+BufferInterval элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._BufferStartHour">
+<summary>
+BufferStartHour элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._BufferEndtHour">
+<summary>
+BufferEndtHour элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._BufferStartMinute">
+<summary>
+BufferStartMinute элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._BufferEndMinute">
+<summary>
+BufferEndMinute элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._DropDownListYear">
+<summary>
+DropDownListYear элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._DropDownListMonth">
+<summary>
+DropDownListMonth элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._GridView1">
+<summary>
+GridView1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._LinqDataSource1">
+<summary>
+LinqDataSource1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._LabelId">
+<summary>
+LabelId элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._LabelVrachId">
+<summary>
+LabelVrachId элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._LabelFIO">
+<summary>
+LabelFIO элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._Button1">
+<summary>
+Button1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._PlaceHolder1">
+<summary>
+PlaceHolder1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem1">
+<summary>
+CAlendarItem1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem2">
+<summary>
+CAlendarItem2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem3">
+<summary>
+CAlendarItem3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem4">
+<summary>
+CAlendarItem4 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem5">
+<summary>
+CAlendarItem5 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem6">
+<summary>
+CAlendarItem6 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem7">
+<summary>
+CAlendarItem7 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._Button3">
+<summary>
+Button3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem8">
+<summary>
+CAlendarItem8 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem9">
+<summary>
+CAlendarItem9 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem10">
+<summary>
+CAlendarItem10 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem11">
+<summary>
+CAlendarItem11 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem12">
+<summary>
+CAlendarItem12 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem13">
+<summary>
+CAlendarItem13 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem14">
+<summary>
+CAlendarItem14 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._Button4">
+<summary>
+Button4 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem15">
+<summary>
+CAlendarItem15 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem16">
+<summary>
+CAlendarItem16 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem17">
+<summary>
+CAlendarItem17 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem18">
+<summary>
+CAlendarItem18 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem19">
+<summary>
+CAlendarItem19 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem20">
+<summary>
+CAlendarItem20 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem21">
+<summary>
+CAlendarItem21 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._Button5">
+<summary>
+Button5 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem22">
+<summary>
+CAlendarItem22 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem23">
+<summary>
+CAlendarItem23 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem24">
+<summary>
+CAlendarItem24 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem25">
+<summary>
+CAlendarItem25 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem26">
+<summary>
+CAlendarItem26 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem27">
+<summary>
+CAlendarItem27 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem28">
+<summary>
+CAlendarItem28 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._Button6">
+<summary>
+Button6 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem29">
+<summary>
+CAlendarItem29 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem30">
+<summary>
+CAlendarItem30 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem31">
+<summary>
+CAlendarItem31 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem32">
+<summary>
+CAlendarItem32 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem33">
+<summary>
+CAlendarItem33 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem34">
+<summary>
+CAlendarItem34 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem35">
+<summary>
+CAlendarItem35 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._Button7">
+<summary>
+Button7 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem36">
+<summary>
+CAlendarItem36 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem37">
+<summary>
+CAlendarItem37 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem38">
+<summary>
+CAlendarItem38 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem39">
+<summary>
+CAlendarItem39 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem40">
+<summary>
+CAlendarItem40 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem41">
+<summary>
+CAlendarItem41 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem42">
+<summary>
+CAlendarItem42 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._Button8">
+<summary>
+Button8 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem43">
+<summary>
+CAlendarItem43 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem44">
+<summary>
+CAlendarItem44 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem45">
+<summary>
+CAlendarItem45 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem46">
+<summary>
+CAlendarItem46 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem47">
+<summary>
+CAlendarItem47 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem48">
+<summary>
+CAlendarItem48 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._CAlendarItem49">
+<summary>
+CAlendarItem49 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._Button2">
+<summary>
+Button2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach_ADD._Label2">
+<summary>
+Label2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach._LinqDataSourceFilials">
+<summary>
+LinqDataSourceFilials элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach._OrgId">
+<summary>
+OrgId элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach._DropDownList1">
+<summary>
+DropDownList1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach._DropDownList2">
+<summary>
+DropDownList2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach._LinqDataSourceSpec">
+<summary>
+LinqDataSourceSpec элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach._GridView1">
+<summary>
+GridView1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach._LinqDataSource1">
+<summary>
+LinqDataSource1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach._LinqDataSource2">
+<summary>
+LinqDataSource2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Filial_Spec_Vrach._GridView2">
+<summary>
+GridView2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.FilialsEdit._HiddenField1">
+<summary>
+HiddenField1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.FilialsEdit._HiddenField2">
+<summary>
+HiddenField2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.FilialsEdit._LinqDataSource1">
+<summary>
+LinqDataSource1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.FilialsEdit._LinqSourceOrgs">
+<summary>
+LinqSourceOrgs элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.FilialsEdit._DetailsView1">
+<summary>
+DetailsView1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.FilialsEdit._Button1">
+<summary>
+Button1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.FilialsSpec._LinqDataSourceFilials">
+<summary>
+LinqDataSourceFilials элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.FilialsSpec._OrgId">
+<summary>
+OrgId элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.FilialsSpec._DropDownList1">
+<summary>
+DropDownList1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.FilialsSpec._LinqDataSource1">
+<summary>
+LinqDataSource1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.FilialsSpec._GridView1">
+<summary>
+GridView1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.FilialsSpec._LinqDataSource2">
+<summary>
+LinqDataSource2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.FilialsSpec._Panel1">
+<summary>
+Panel1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.FilialsSpec._Label3">
+<summary>
+Label3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.FilialsSpec._Label4">
+<summary>
+Label4 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.FilialsSpec._Label5">
+<summary>
+Label5 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.FilialsSpec._DropDownList4">
+<summary>
+DropDownList4 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.FilialsSpec._Button1">
+<summary>
+Button1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.OrgEdit._OrgID">
+<summary>
+OrgID элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.OrgEdit._LinqDataSource1">
+<summary>
+LinqDataSource1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.OrgEdit._DetailsView1">
+<summary>
+DetailsView1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.RaspisanieStatic._LinqDataSourceFilials">
+<summary>
+LinqDataSourceFilials элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.RaspisanieStatic._OrgId">
+<summary>
+OrgId элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.RaspisanieStatic._DropDownList1">
+<summary>
+DropDownList1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.RaspisanieStatic._DropDownList2">
+<summary>
+DropDownList2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.RaspisanieStatic._LinqDataSourceSpec">
+<summary>
+LinqDataSourceSpec элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.RaspisanieStatic._BufferStatus">
+<summary>
+BufferStatus элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.RaspisanieStatic._BufferInterval">
+<summary>
+BufferInterval элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.RaspisanieStatic._BufferStartHour">
+<summary>
+BufferStartHour элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.RaspisanieStatic._BufferEndtHour">
+<summary>
+BufferEndtHour элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.RaspisanieStatic._BufferStartMinute">
+<summary>
+BufferStartMinute элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.RaspisanieStatic._BufferEndMinute">
+<summary>
+BufferEndMinute элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.RaspisanieStatic._GridView1">
+<summary>
+GridView1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.RaspisanieStatic._LinqDataSource1">
+<summary>
+LinqDataSource1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.RaspisanieStatic._LabelId">
+<summary>
+LabelId элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.RaspisanieStatic._LabelVrachId">
+<summary>
+LabelVrachId элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.RaspisanieStatic._LabelFIO">
+<summary>
+LabelFIO элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.RaspisanieStatic._Button1">
+<summary>
+Button1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.RaspisanieStatic._PlaceHolder1">
+<summary>
+PlaceHolder1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.stat1._HiddenField1">
+<summary>
+HiddenField1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.stat1._TextBox1">
+<summary>
+TextBox1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.stat1._TextBox1_CalendarExtender">
+<summary>
+TextBox1_CalendarExtender элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.stat1._TextBox2">
+<summary>
+TextBox2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.stat1._TextBox2_CalendarExtender">
+<summary>
+TextBox2_CalendarExtender элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.stat1._Button1">
+<summary>
+Button1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.stat1._Literal1">
+<summary>
+Literal1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.test._form1">
+<summary>
+form1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.test._HiddenField1">
+<summary>
+HiddenField1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.test._TextBox1">
+<summary>
+TextBox1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.test._TextBox2">
+<summary>
+TextBox2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.test._Button1">
+<summary>
+Button1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.test._Literal1">
+<summary>
+Literal1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.SiteAdmin._head">
+<summary>
+head элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.SiteAdmin._form1">
+<summary>
+form1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.SiteAdmin._Panel1">
+<summary>
+Panel1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.SiteAdmin._ContentPlaceHolder1">
+<summary>
+ContentPlaceHolder1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.SpecEdit._LinqDataSource1">
+<summary>
+LinqDataSource1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.SpecEdit._OrgId">
+<summary>
+OrgId элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.SpecEdit._GridView1">
+<summary>
+GridView1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.SpecEdit._Panel1">
+<summary>
+Panel1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.SpecEdit._LinqDataSource2">
+<summary>
+LinqDataSource2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.SpecEdit._DetailsView1">
+<summary>
+DetailsView1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.TalonItem._LabelDate">
+<summary>
+LabelDate элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.TalonItem._LabelTime">
+<summary>
+LabelTime элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.TalonItem._CheckBoxStatus">
+<summary>
+CheckBoxStatus элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.TalonItem._HiddenField1">
+<summary>
+HiddenField1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._LinqDataSourceFilials">
+<summary>
+LinqDataSourceFilials элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._OrgId">
+<summary>
+OrgId элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._NumOfWeek">
+<summary>
+NumOfWeek элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._DropDownList1">
+<summary>
+DropDownList1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._DropDownList2">
+<summary>
+DropDownList2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._LinqDataSourceSpec">
+<summary>
+LinqDataSourceSpec элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._DropDownListYear">
+<summary>
+DropDownListYear элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._DropDownListMonth">
+<summary>
+DropDownListMonth элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._LabelId">
+<summary>
+LabelId элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._LabelFIO">
+<summary>
+LabelFIO элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._GridView1">
+<summary>
+GridView1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._LinqDataSource1">
+<summary>
+LinqDataSource1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._Panel1">
+<summary>
+Panel1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._PlaceHolder1">
+<summary>
+PlaceHolder1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._PlaceHolder2">
+<summary>
+PlaceHolder2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._PlaceHolder3">
+<summary>
+PlaceHolder3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._PlaceHolder4">
+<summary>
+PlaceHolder4 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._PlaceHolder5">
+<summary>
+PlaceHolder5 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._PlaceHolder6">
+<summary>
+PlaceHolder6 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._PlaceHolder7">
+<summary>
+PlaceHolder7 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons1._Button1">
+<summary>
+Button1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Vrach1._LinqDataSource1">
+<summary>
+LinqDataSource1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Vrach1._IdOrg">
+<summary>
+IdOrg элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Vrach1._GridView1">
+<summary>
+GridView1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Vrach1._LinqDataSource3">
+<summary>
+LinqDataSource3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Vrach1._LinqDataSource2">
+<summary>
+LinqDataSource2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Vrach1._Panel1">
+<summary>
+Panel1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Vrach1._TextBoxSurname">
+<summary>
+TextBoxSurname элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Vrach1._TextBoxName">
+<summary>
+TextBoxName элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Vrach1._TextBoxMidname">
+<summary>
+TextBoxMidname элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Vrach1._TextBoxTabNum">
+<summary>
+TextBoxTabNum элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Vrach1._TextBoxDateBirth">
+<summary>
+TextBoxDateBirth элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Vrach1._DropDownList2">
+<summary>
+DropDownList2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Vrach1._TextBoxVUZ">
+<summary>
+TextBoxVUZ элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Vrach1._TextBoxCert">
+<summary>
+TextBoxCert элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Vrach1._DropDownList4">
+<summary>
+DropDownList4 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Vrach1._TextBoxPovKvalif">
+<summary>
+TextBoxPovKvalif элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Vrach1._Button1">
+<summary>
+Button1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.VrachCategory._LinqDataSource1">
+<summary>
+LinqDataSource1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.VrachCategory._GridView1">
+<summary>
+GridView1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.VrachCategory._Panel1">
+<summary>
+Panel1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.VrachCategory._LinqDataSource2">
+<summary>
+LinqDataSource2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.VrachCategory._DetailsView1">
+<summary>
+DetailsView1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.VrachObrazovanie._LinqDataSource1">
+<summary>
+LinqDataSource1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.VrachObrazovanie._GridView1">
+<summary>
+GridView1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.VrachObrazovanie._Panel1">
+<summary>
+Panel1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.VrachObrazovanie._LinqDataSource2">
+<summary>
+LinqDataSource2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.VrachObrazovanie._DetailsView1">
+<summary>
+DetailsView1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.WorkTimeWebRegByFilial._OrgId">
+<summary>
+OrgId элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.WorkTimeWebRegByFilial._DropDownList1">
+<summary>
+DropDownList1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.WorkTimeWebRegByFilial._LinqDataSourceFilials">
+<summary>
+LinqDataSourceFilials элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.WorkTimeWebRegByFilial._GridView1">
+<summary>
+GridView1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.WorkTimeWebRegByFilial._LinqDataSourceWorkTime">
+<summary>
+LinqDataSourceWorkTime элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.WorkTimeWebRegByFilial._Label1">
+<summary>
+Label1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.WorkTimeWebRegByFilial._DropDownList3">
+<summary>
+DropDownList3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.WorkTimeWebRegByFilial._Label2">
+<summary>
+Label2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.WorkTimeWebRegByFilial._TextBoxTime">
+<summary>
+TextBoxTime элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.WorkTimeWebRegByFilial._Label3">
+<summary>
+Label3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.WorkTimeWebRegByFilial._CheckBoxWeekend">
+<summary>
+CheckBoxWeekend элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.WorkTimeWebRegByFilial._Button1">
+<summary>
+Button1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="M:Appointment.gl.RandomString(System.Int32)">
+ <summary>
+ Returns a random string of the specified length. 
+ </summary>
+ <param name="length"></param>
+ <returns></returns>
+ <remarks>
+ All supported characters are contained in the chars() string array. Characters can be added or removed from this array to
+ add or remove them from inclusion when the random string is created.
+ bpell
+ </remarks>
+</member>
+<member name="F:Appointment.Raspisanie._HiddenField1">
+<summary>
+HiddenField1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Raspisanie._Literal1">
+<summary>
+Literal1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Raspisanie._DropDownList1">
+<summary>
+DropDownList1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Raspisanie._LinqDataSource1">
+<summary>
+LinqDataSource1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Raspisanie._Literal2">
+<summary>
+Literal2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default2._Literal1">
+<summary>
+Literal1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default2._LinkButton1">
+<summary>
+LinkButton1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Preferences._Panel2">
+<summary>
+Panel2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Preferences._Label1">
+<summary>
+Label1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Preferences._HeadingTextBox">
+<summary>
+HeadingTextBox элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Preferences._HyperLink1">
+<summary>
+HyperLink1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Preferences._ConfigFileRequiredFieldValidator">
+<summary>
+ConfigFileRequiredFieldValidator элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Preferences._Panel1">
+<summary>
+Panel1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Preferences._Label5">
+<summary>
+Label5 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Preferences._VirtualPathTextBox">
+<summary>
+VirtualPathTextBox элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Preferences._Label2">
+<summary>
+Label2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Preferences._SiteNameTextBox">
+<summary>
+SiteNameTextBox элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Preferences._Label3">
+<summary>
+Label3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Preferences._SubPathTextBox">
+<summary>
+SubPathTextBox элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Preferences._Label4">
+<summary>
+Label4 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Preferences._ServerTextBox">
+<summary>
+ServerTextBox элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Preferences._SaveButton">
+<summary>
+SaveButton элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Preferences._CancelButton">
+<summary>
+CancelButton элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._TextBoxCode">
+<summary>
+TextBoxCode элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._btnSubmit">
+<summary>
+btnSubmit элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._Panel1">
+<summary>
+Panel1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._LabelFIO">
+<summary>
+LabelFIO элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._LabelTalonNum">
+<summary>
+LabelTalonNum элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._LabelFilial">
+<summary>
+LabelFilial элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._LabelSpec">
+<summary>
+LabelSpec элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._LabelVrach">
+<summary>
+LabelVrach элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._LabelDate">
+<summary>
+LabelDate элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._HyperLinkForCancel">
+<summary>
+HyperLinkForCancel элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._LabelOrg">
+<summary>
+LabelOrg элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._Panel2">
+<summary>
+Panel2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._LabelFIO2">
+<summary>
+LabelFIO2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._LabelTalonNum2">
+<summary>
+LabelTalonNum2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._LabelFilial2">
+<summary>
+LabelFilial2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._LabelSpecialnost2">
+<summary>
+LabelSpecialnost2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._LabelVrach2">
+<summary>
+LabelVrach2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._LabelDate2">
+<summary>
+LabelDate2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._LabelOtkazText">
+<summary>
+LabelOtkazText элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._LabelOrg2">
+<summary>
+LabelOrg2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._Panel3">
+<summary>
+Panel3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.prov._LabelFIO3">
+<summary>
+LabelFIO3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._LabelTimeout">
+<summary>
+LabelTimeout элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label12">
+<summary>
+Label12 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Labelorg">
+<summary>
+Labelorg элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label13">
+<summary>
+Label13 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._LabelFil">
+<summary>
+LabelFil элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label14">
+<summary>
+Label14 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._LabelAdd">
+<summary>
+LabelAdd элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label15">
+<summary>
+Label15 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._LabelSpec">
+<summary>
+LabelSpec элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label16">
+<summary>
+Label16 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._LabelVrach">
+<summary>
+LabelVrach элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label23">
+<summary>
+Label23 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Labeldesc">
+<summary>
+Labeldesc элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label17">
+<summary>
+Label17 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._LabelKat">
+<summary>
+LabelKat элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label18">
+<summary>
+Label18 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._LabelObr">
+<summary>
+LabelObr элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label20">
+<summary>
+Label20 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._LabelCert">
+<summary>
+LabelCert элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label19">
+<summary>
+Label19 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._LabelDT">
+<summary>
+LabelDT элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label22">
+<summary>
+Label22 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._LabelOsobenn">
+<summary>
+LabelOsobenn элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._ErrorMessage">
+<summary>
+ErrorMessage элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label1">
+<summary>
+Label1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._TextBoxEmail">
+<summary>
+TextBoxEmail элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._RegularExpressionValidator1">
+<summary>
+RegularExpressionValidator1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label11">
+<summary>
+Label11 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._TextBoxPhone">
+<summary>
+TextBoxPhone элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label2">
+<summary>
+Label2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._TextBoxSurname">
+<summary>
+TextBoxSurname элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label6">
+<summary>
+Label6 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._TextBoxName">
+<summary>
+TextBoxName элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label7">
+<summary>
+Label7 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._TextBoxMidName">
+<summary>
+TextBoxMidName элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label4">
+<summary>
+Label4 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._RadioButtonList1">
+<summary>
+RadioButtonList1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label8">
+<summary>
+Label8 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._TextBoxBirthDay">
+<summary>
+TextBoxBirthDay элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label3">
+<summary>
+Label3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._TextBoxAddress">
+<summary>
+TextBoxAddress элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label9">
+<summary>
+Label9 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._TextBoxPolisNum">
+<summary>
+TextBoxPolisNum элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label10">
+<summary>
+Label10 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._TextBoxInsuranseCompany">
+<summary>
+TextBoxInsuranseCompany элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._Label5">
+<summary>
+Label5 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._DropDownListMedKarta">
+<summary>
+DropDownListMedKarta элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._btnSubmit">
+<summary>
+btnSubmit элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._btnCancel">
+<summary>
+btnCancel элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment._Default1._HiddenFieldIdTalon">
+<summary>
+HiddenFieldIdTalon элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.SiteMaster._LiteralCSS">
+<summary>
+LiteralCSS элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.SiteMaster._HiddenFieldWCGA">
+<summary>
+HiddenFieldWCGA элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.SiteMaster._Panel1">
+<summary>
+Panel1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.SiteMaster._MainContent">
+<summary>
+MainContent элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.SiteMaster._LiteralBackStretch">
+<summary>
+LiteralBackStretch элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.SiteWCGA._head">
+<summary>
+head элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.SiteWCGA._form1">
+<summary>
+form1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.SiteWCGA._ContentPlaceHolder1">
+<summary>
+ContentPlaceHolder1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Success._Panel1">
+<summary>
+Panel1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Success._HyperLink1">
+<summary>
+HyperLink1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Success._Label1">
+<summary>
+Label1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Success._Panel2">
+<summary>
+Panel2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Success._Panel3">
+<summary>
+Panel3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons2._Literal1">
+<summary>
+Literal1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons2._Literal4">
+<summary>
+Literal4 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons2._Literal2">
+<summary>
+Literal2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons2._Literal3">
+<summary>
+Literal3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Talons2._OrgId">
+<summary>
+OrgId элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Site_Mobile._LiteralCSS">
+<summary>
+LiteralCSS элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Site_Mobile._HiddenFieldWCGA">
+<summary>
+HiddenFieldWCGA элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Site_Mobile._Panel1">
+<summary>
+Panel1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Site_Mobile._LinkButton1">
+<summary>
+LinkButton1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Site_Mobile._HyperLink1">
+<summary>
+HyperLink1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Site_Mobile._MainContent">
+<summary>
+MainContent элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:Appointment.Site_Mobile._LiteralBackStretch">
+<summary>
+LiteralBackStretch элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+</members>
+</doc>

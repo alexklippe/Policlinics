@@ -1,0 +1,21 @@
+﻿
+
+.mainInfo {
+      /*width: 620px;*/
+    margin: 15px 0px;
+    padding-right: 6px;
+
+}
+
+.sidebar {
+    max-width: 100%;
+    padding: 0;
+    padding-top: 15px;
+    float: none;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+   
+}

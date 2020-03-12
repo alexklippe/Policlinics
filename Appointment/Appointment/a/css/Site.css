@@ -1,0 +1,19 @@
+﻿body {
+}
+fieldset label
+{
+    display: block;
+    float:left;
+    width: 10em;
+}
+
+.errorMessage
+{
+    font-weight: bold;
+    color: Red;
+}
+
+.bold
+{
+	font-weight: bold;
+}

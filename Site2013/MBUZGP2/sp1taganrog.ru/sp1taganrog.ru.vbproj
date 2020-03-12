@@ -1,0 +1,991 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>sp1taganrog.ru</RootNamespace>
+    <AssemblyName>sp1taganrog.ru</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebForms_Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebForms_Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=17.1.1.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.17.1.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap, Version=3.3.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.3.7\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery, Version=1.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.12.0\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.1.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.1.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.1.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.1.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\AddPhoneNumber.aspx" />
+    <Content Include="Account\Confirm.aspx" />
+    <Content Include="Account\Forgot.aspx" />
+    <Content Include="Account\Lockout.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\ManageLogins.aspx" />
+    <Content Include="Account\ManagePassword.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="Account\ResetPassword.aspx" />
+    <Content Include="Account\ResetPasswordConfirmation.aspx" />
+    <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
+    <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Ads\img\perepis2019.jpg" />
+    <Content Include="Ads\nalog19.aspx" />
+    <Content Include="Ads\ONFKonkurs.aspx" />
+    <Content Include="Ads\perepis19.aspx" />
+    <Content Include="apple-touch-favicon.png" />
+    <Content Include="claim.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\MainStyle.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Docs\Doctors.aspx" />
+    <Content Include="Docs\DVBT2.aspx" />
+    <Content Include="Docs\FedRules.aspx" />
+    <Content Include="Docs\files\2017\Vakcine.png" />
+    <Content Include="Docs\files\2019\прил.6 Приказ о приеме на работу руководителя.jpg" />
+    <Content Include="Docs\files\doctors.jpg" />
+    <Content Include="Docs\files\pmp\pmp1.jpg" />
+    <Content Include="Docs\files\pmp\pmp2.jpg" />
+    <Content Include="Docs\files\pmp\pmp3.jpg" />
+    <Content Include="Docs\files\pmp\pmp4.jpg" />
+    <Content Include="Docs\files\pmp\pmp5.jpg" />
+    <Content Include="Docs\files\pp\pp1.jpg" />
+    <Content Include="Docs\files\pp\pp2.jpg" />
+    <Content Include="Docs\files\pp\pp3.jpg" />
+    <Content Include="Docs\files\pp\pp4.jpg" />
+    <Content Include="Docs\files\Reglament\GosReg.JPG" />
+    <Content Include="Docs\files\Reglament\prikaz.jpg" />
+    <Content Include="Docs\files\Reglament\SvidEGRUL.jpg" />
+    <Content Include="Docs\files\Reglament\SvidNalog.jpg" />
+    <Content Include="Docs\links.aspx" />
+    <Content Include="Docs\Narush.aspx" />
+    <Content Include="Docs\files\2017\Реализация-приказа-УЗ-г.Таганрога-от-27.02.2017г.-№-53.pdf" />
+    <Content Include="Docs\files\Сведения о медработниках.xls" />
+    <Content Include="Docs\files\otch\Баланс2017.pdf" />
+    <Content Include="Docs\files\2019\прил.1 Структура.pdf" />
+    <Content Include="Docs\files\2019\прил.2 Сведения о медработниках.xls" />
+    <Content Include="Docs\files\2019\Приказ о переименовании.pdf" />
+    <Content Include="Docs\files\2019\Реализация приказа УЗ г.Таганрога от 27.02.2017 №53 за 2018г..pdf" />
+    <Content Include="Docs\files\Reglament\Лист изменения к уставу 2018.pdf" />
+    <Content Include="Docs\files\2019\ПриказТерПр2019.pdf" />
+    <Content Include="Docs\files\2019\приложение 1 Договор ПУ.pdf" />
+    <Content Include="Docs\files\2019\приложение 2 Положение.pdf" />
+    <Content Include="Docs\files\2019\Правила платных услуг.pdf" />
+    <Content Include="Docs\files\2019\Памятка_для_граждан_о_гарантиях_бесплатного_оказания_медицинской_помощи.pdf" />
+    <Content Include="Docs\files\2019\Положение о порядке и условиях предоставления бесплатной2019.pdf" />
+    <Content Include="Docs\files\2019\Инфоргафика МБУЗ сп1.pdf" />
+    <Content Include="Docs\files\2019\Политика обработки персональных данных.pdf" />
+    <Content Include="Docs\files\2019\Перечень реком. мероприятий часть 1.PDF" />
+    <Content Include="Docs\files\2019\Перечень реком. мероприятий часть 2.PDF" />
+    <Content Include="Docs\files\2019\Св. ведомость СОУТ часть1.PDF" />
+    <Content Include="Docs\files\2019\Св. ведомость СОУТ часть2.PDF" />
+    <Content Include="Docs\files\2020\Информация для граждан.pdf" />
+    <Content Include="Docs\files\2020\Список адвокатов.pdf" />
+    <None Include="Scripts\jquery-1.12.0.intellisense.js" />
+    <Content Include="Docs\Politika-confidecialnosti.aspx" />
+    <Content Include="img\banners\family\1.gif" />
+    <Content Include="img\banners\family\2.gif" />
+    <Content Include="img\banners\family\3.gif" />
+    <Content Include="img\TFOMS.png" />
+    <Content Include="Scripts\jquery-1.12.0.js" />
+    <Content Include="Scripts\jquery-1.12.0.min.js" />
+    <Content Include="Uslugi\2018\ПриказПлУ.jpg" />
+    <Content Include="Vacancy.aspx" />
+    <Content Include="Vazhno\Booking.aspx" />
+    <Content Include="Vazhno\COVID-19.aspx" />
+    <Content Include="Vazhno\d\dia.aspx" />
+    <Content Include="Vazhno\d\HIV.aspx" />
+    <Content Include="Vazhno\family.aspx" />
+    <Content Include="Vazhno\img\hiv1.jpg" />
+    <Content Include="Vazhno\img\koronovirus-article-01.jpg" />
+    <Content Include="Vazhno\img\mask_icon.png" />
+    <Content Include="Vazhno\img\osteoporoz.jpg" />
+    <Content Include="Vazhno\lawyers.aspx" />
+    <Content Include="Vazhno\Osteoporoz.aspx" />
+    <Content Include="Docs\Pamyatka.aspx" />
+    <Content Include="Docs\perechenLS.aspx" />
+    <Content Include="Docs\PlanService.aspx" />
+    <Content Include="Docs\Polozhenije.aspx" />
+    <Content Include="Docs\Reglament.aspx" />
+    <Content Include="Docs\Rules.aspx" />
+    <Content Include="Docs\Usloviya.aspx" />
+    <Content Include="Docs\ПаролиИЯвки.jpg" />
+    <Content Include="favicon.png" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\logoHead.png" />
+    <Content Include="img\onmap.jpg" />
+    <Content Include="img\Osteoporoz\osteo1.jpg" />
+    <Content Include="img\Osteoporoz\osteo2.jpg" />
+    <Content Include="img\Osteoporoz\osteo3.jpg" />
+    <Content Include="img\stories\WorkPlace\full\img %281%29.jpg" />
+    <Content Include="img\stories\WorkPlace\full\img %282%29.jpg" />
+    <Content Include="img\stories\WorkPlace\full\img %283%29.jpg" />
+    <Content Include="img\stories\WorkPlace\full\img %284%29.jpg" />
+    <Content Include="img\stories\WorkPlace\full\img %285%29.jpg" />
+    <Content Include="img\stories\WorkPlace\full\img %286%29.jpg" />
+    <Content Include="img\stories\WorkPlace\tumbnails\img %281%29_137_91_80.jpg" />
+    <Content Include="img\stories\WorkPlace\tumbnails\img %282%29_137_96_80.jpg" />
+    <Content Include="img\stories\WorkPlace\tumbnails\img %283%29_137_102_80.jpg" />
+    <Content Include="img\stories\WorkPlace\tumbnails\img %284%29_137_91_80.jpg" />
+    <Content Include="img\stories\WorkPlace\tumbnails\img %285%29_137_91_80.jpg" />
+    <Content Include="img\stories\WorkPlace\tumbnails\img %286%29_137_91_80.jpg" />
+    <Content Include="img\stories\WorkPlace\tumbnails\img %287%29_137_54_80.jpg" />
+    <Content Include="img\stories\WorkPlace\tumbnails\img %288%29_137_82_80.jpg" />
+    <Content Include="img\stories\WorkPlace\tumbnails\img %289%29_131_102_80.jpg" />
+    <Content Include="packages.config" />
+    <Content Include="Account\Web.config" />
+    <Content Include="Policlinic\Route.aspx" />
+    <Content Include="Policlinic\Structure.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Uslugi\img\Prices_1.jpg" />
+    <Content Include="Uslugi\img\Prices_2.jpg" />
+    <Content Include="Uslugi\img\Prices_3.jpg" />
+    <Content Include="Uslugi\img\Prices_4.jpg" />
+    <Content Include="Uslugi\img\Prices_5.jpg" />
+    <Content Include="Uslugi\img\Prices_6.jpg" />
+    <Content Include="Uslugi\img\Prices_7.jpg" />
+    <Content Include="Uslugi\img\Prices_8.jpg" />
+    <Content Include="Uslugi\img\Lgot_1.JPG" />
+    <Content Include="Uslugi\img\Lgot_2.JPG" />
+    <Content Include="Uslugi\img\Lgot_3.JPG" />
+    <Content Include="Uslugi\img\Prikaz\Lgot_list_1.JPG" />
+    <Content Include="Uslugi\img\Prikaz\Lgot_list_2.JPG" />
+    <Content Include="Uslugi\img\Prikaz\Prices_2014_1.JPG" />
+    <Content Include="Uslugi\img\Prikaz\Prices_2014_2.JPG" />
+    <Content Include="Uslugi\img\Prikaz\pu1.jpg" />
+    <Content Include="Uslugi\img\Prikaz\pu2.jpg" />
+    <Content Include="Uslugi\img\Prikaz\pu3.jpg" />
+    <Content Include="Uslugi\img\prpu1.jpg" />
+    <Content Include="Uslugi\img\prpu2.jpg" />
+    <Content Include="Uslugi\img\prpu3.jpg" />
+    <Content Include="Uslugi\PriceStatic.aspx" />
+    <Content Include="Uslugi\VidUslug.aspx" />
+    <Content Include="Vazhno\GRIPP.aspx" />
+    <Content Include="Vazhno\Vakcine.aspx" />
+    <Content Include="Vazhno\VICH.aspx" />
+    <Content Include="Vazhno\ZOZH.aspx" />
+    <Content Include="WorkPlace.aspx" />
+    <Content Include="WorkTime.aspx" />
+    <Content Include="ПРОЧТИ.txt" />
+    <Content Include="Docs\files\Reglament\Charter2011.pdf" />
+    <Content Include="Docs\files\Reglament\License2011.pdf" />
+    <Content Include="Docs\files\Reglament\Lab.zip" />
+    <Content Include="Docs\files\Reglament\Soviet_2014.pdf" />
+    <Content Include="Docs\files\Reglament\TerrGovGuaranteeProgram_2015.pdf" />
+    <Content Include="Docs\files\Reglament\perechen-lek-2015.pdf" />
+    <Content Include="Docs\files\otch\pokazateli.pdf" />
+    <Content Include="Docs\files\otch\MunZ.pdf" />
+    <Content Include="Docs\files\otch\PlanFHD.pdf" />
+    <Content Include="Docs\files\otch\Balance2013.pdf" />
+    <Content Include="Docs\files\otch\Independent_Check_2014.pdf" />
+    <Content Include="Docs\files\otch\Results.pdf" />
+    <Content Include="Docs\files\dopu.doc" />
+    <Content Include="Docs\files\dopu.pdf" />
+    <Content Include="Docs\files\otch\Баланс2014.pdf" />
+    <Content Include="Docs\files\Сведения о медработниках2016.xls" />
+    <Content Include="Docs\files\otch\Сведения о результатах внешних контрольных мероприятий.pdf" />
+    <Content Include="Docs\files\Reglament\ФЗ406н.pdf" />
+    <Content Include="Docs\files\Reglament\ФЗ407н.pdf" />
+    <Content Include="Docs\files\ankets\Результат опроса СП1.pdf" />
+    <Content Include="Docs\files\Бесплатная юридическая помощь.pdf" />
+    <Content Include="Docs\files\Положение.pdf" />
+    <Content Include="Docs\files\2017\Gripp.pdf" />
+    <Content Include="Docs\files\Reglament\License.pdf" />
+    <Content Include="Docs\files\Reglament\Charter.pdf" />
+    <Content Include="Docs\files\Сведения о медработниках2017.xls" />
+    <Content Include="Docs\files\2017\Структура.pdf" />
+    <Content Include="Docs\files\2017\Реализация-приказа-УЗ-г.Таганрога-от-27.02.2017г.-№-53_16.pdf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="My Project\PublishProfiles\sp1tag.pubxml" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Project_Readme.html" />
+    <Content Include="Views\web.config" />
+    <Content Include="Uslugi\2015\Прейскурант2015.pdf" />
+    <Content Include="Uslugi\2015\Прейскурант2015льготный.pdf" />
+    <Content Include="Uslugi\2015\приказ на пу льгот.PDF" />
+    <Content Include="Uslugi\2015\приказ на пу.PDF" />
+    <Content Include="Vazhno\Files\Лекция ВИЧ.pdf" />
+    <Content Include="Scripts\jquery-1.12.0.min.map" />
+    <Content Include="Uslugi\Files\Класификатор2017.pdf" />
+    <Content Include="Uslugi\Files\Разъяснение.pdf" />
+    <Content Include="Uslugi\2018\ПрейскурантПрил2.pdf" />
+    <Content Include="Uslugi\2018\ПрейскурантПрил3.pdf" />
+    <Content Include="Uslugi\2018\Приложение 4.pdf" />
+    <Content Include="Uslugi\2019\прил.3 Классификатор стоматология 2019.pdf" />
+    <Content Include="Uslugi\2019\прил.3-1 СМО.pdf" />
+    <Content Include="Uslugi\2019\прил.4 Перечень, оказываемых платных медицинских услуг.pdf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\AddPhoneNumber.aspx.designer.vb">
+      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\AddPhoneNumber.aspx.vb">
+      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.designer.vb">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.vb">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.designer.vb">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.vb">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Lockout.aspx.designer.vb">
+      <DependentUpon>Lockout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Lockout.aspx.vb">
+      <DependentUpon>Lockout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.vb">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.vb">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManageLogins.aspx.designer.vb">
+      <DependentUpon>ManageLogins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManageLogins.aspx.vb">
+      <DependentUpon>ManageLogins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManagePassword.aspx.designer.vb">
+      <DependentUpon>ManagePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManagePassword.aspx.vb">
+      <DependentUpon>ManagePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.vb">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.vb">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.vb">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.vb">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.designer.vb">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.vb">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.designer.vb">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.vb">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.designer.vb">
+      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.vb">
+      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\VerifyPhoneNumber.aspx.designer.vb">
+      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\VerifyPhoneNumber.aspx.vb">
+      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ads\nalog19.aspx.designer.vb">
+      <DependentUpon>nalog19.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ads\nalog19.aspx.vb">
+      <DependentUpon>nalog19.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Ads\ONFKonkurs.aspx.designer.vb">
+      <DependentUpon>ONFKonkurs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ads\ONFKonkurs.aspx.vb">
+      <DependentUpon>ONFKonkurs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Ads\perepis19.aspx.designer.vb">
+      <DependentUpon>perepis19.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ads\perepis19.aspx.vb">
+      <DependentUpon>perepis19.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.vb" />
+    <Compile Include="App_Start\IdentityConfig.vb" />
+    <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="About.aspx.designer.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="App_Start\Startup.Auth.vb" />
+    <Compile Include="App_Start\WebApiConfig.vb" />
+    <Compile Include="claim.aspx.designer.vb">
+      <DependentUpon>claim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="claim.aspx.vb">
+      <DependentUpon>claim.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\Doctors.aspx.designer.vb">
+      <DependentUpon>Doctors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\Doctors.aspx.vb">
+      <DependentUpon>Doctors.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Docs\DVBT2.aspx.designer.vb">
+      <DependentUpon>DVBT2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\DVBT2.aspx.vb">
+      <DependentUpon>DVBT2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Docs\FedRules.aspx.designer.vb">
+      <DependentUpon>FedRules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\FedRules.aspx.vb">
+      <DependentUpon>FedRules.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Docs\links.aspx.designer.vb">
+      <DependentUpon>links.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\links.aspx.vb">
+      <DependentUpon>links.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Docs\Narush.aspx.designer.vb">
+      <DependentUpon>Narush.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\Narush.aspx.vb">
+      <DependentUpon>Narush.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Docs\Politika-confidecialnosti.aspx.designer.vb">
+      <DependentUpon>Politika-confidecialnosti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\Politika-confidecialnosti.aspx.vb">
+      <DependentUpon>Politika-confidecialnosti.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Vacancy.aspx.designer.vb">
+      <DependentUpon>Vacancy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vacancy.aspx.vb">
+      <DependentUpon>Vacancy.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Vazhno\Booking.aspx.designer.vb">
+      <DependentUpon>Booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vazhno\Booking.aspx.vb">
+      <DependentUpon>Booking.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Vazhno\COVID-19.aspx.designer.vb">
+      <DependentUpon>COVID-19.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vazhno\COVID-19.aspx.vb">
+      <DependentUpon>COVID-19.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Vazhno\d\dia.aspx.designer.vb">
+      <DependentUpon>dia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vazhno\d\dia.aspx.vb">
+      <DependentUpon>dia.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Vazhno\d\HIV.aspx.designer.vb">
+      <DependentUpon>HIV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vazhno\d\HIV.aspx.vb">
+      <DependentUpon>HIV.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Vazhno\family.aspx.designer.vb">
+      <DependentUpon>family.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vazhno\family.aspx.vb">
+      <DependentUpon>family.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Vazhno\lawyers.aspx.designer.vb">
+      <DependentUpon>lawyers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vazhno\lawyers.aspx.vb">
+      <DependentUpon>lawyers.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Vazhno\Osteoporoz.aspx.designer.vb">
+      <DependentUpon>Osteoporoz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vazhno\Osteoporoz.aspx.vb">
+      <DependentUpon>Osteoporoz.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Docs\Pamyatka.aspx.designer.vb">
+      <DependentUpon>Pamyatka.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\Pamyatka.aspx.vb">
+      <DependentUpon>Pamyatka.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Docs\perechenLS.aspx.designer.vb">
+      <DependentUpon>perechenLS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\perechenLS.aspx.vb">
+      <DependentUpon>perechenLS.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Docs\PlanService.aspx.designer.vb">
+      <DependentUpon>PlanService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\PlanService.aspx.vb">
+      <DependentUpon>PlanService.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Docs\Polozhenije.aspx.designer.vb">
+      <DependentUpon>Polozhenije.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\Polozhenije.aspx.vb">
+      <DependentUpon>Polozhenije.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Docs\Reglament.aspx.designer.vb">
+      <DependentUpon>Reglament.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\Reglament.aspx.vb">
+      <DependentUpon>Reglament.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Docs\Rules.aspx.designer.vb">
+      <DependentUpon>Rules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\Rules.aspx.vb">
+      <DependentUpon>Rules.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Docs\Usloviya.aspx.designer.vb">
+      <DependentUpon>Usloviya.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Docs\Usloviya.aspx.vb">
+      <DependentUpon>Usloviya.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IdentityModels.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Policlinic\Route.aspx.designer.vb">
+      <DependentUpon>Route.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Policlinic\Route.aspx.vb">
+      <DependentUpon>Route.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Policlinic\Structure.aspx.designer.vb">
+      <DependentUpon>Structure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Policlinic\Structure.aspx.vb">
+      <DependentUpon>Structure.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Startup.vb" />
+    <Compile Include="Uslugi\PriceStatic.aspx.designer.vb">
+      <DependentUpon>PriceStatic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Uslugi\PriceStatic.aspx.vb">
+      <DependentUpon>PriceStatic.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Uslugi\VidUslug.aspx.designer.vb">
+      <DependentUpon>VidUslug.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Uslugi\VidUslug.aspx.vb">
+      <DependentUpon>VidUslug.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Vazhno\GRIPP.aspx.designer.vb">
+      <DependentUpon>GRIPP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vazhno\GRIPP.aspx.vb">
+      <DependentUpon>GRIPP.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Vazhno\Vakcine.aspx.designer.vb">
+      <DependentUpon>Vakcine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vazhno\Vakcine.aspx.vb">
+      <DependentUpon>Vakcine.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Vazhno\VICH.aspx.designer.vb">
+      <DependentUpon>VICH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vazhno\VICH.aspx.vb">
+      <DependentUpon>VICH.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Vazhno\ZOZH.aspx.designer.vb">
+      <DependentUpon>ZOZH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vazhno\ZOZH.aspx.vb">
+      <DependentUpon>ZOZH.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.vb">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.vb">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.vb">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.vb">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPlace.aspx.designer.vb">
+      <DependentUpon>WorkPlace.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPlace.aspx.vb">
+      <DependentUpon>WorkPlace.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WorkTime.aspx.designer.vb">
+      <DependentUpon>WorkTime.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkTime.aspx.vb">
+      <DependentUpon>WorkTime.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Site.Master" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="ViewSwitcher.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1866</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1866/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Включите восстановление пакетов NuGet, чтобы скачать их. Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

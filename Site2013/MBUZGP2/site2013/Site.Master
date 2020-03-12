@@ -1,0 +1,243 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="site2013.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="cache-control" content="max-age=86400" />
+    <meta http-equiv=”last-modified” content=”2019-12-01” />
+    <meta name="description" content="Официальный сайт городской поликлиники №2 г.Таганрог" />
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 859px), only screen and (max-device-width: 859px)" href="smallscreen.css" />
+    <title>ТГП2</title>
+    <%--<link href="~/default.css" rel="stylesheet" type="text/css" />--%>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <%--<script type="text/javascript" src="/scripts/jquery-1.4.1.min.js"></script>--%>
+    <%-- <script type="text/javascript" src="/Scripts/jquery-3.1.1.intellisense.js"></script>--%>
+    <script type="text/javascript" src="/Scripts/jquery-3.1.1.js"></script>
+    <%--  <script type="text/javascript" src="Scripts/jquery-3.1.1.min.js"></script>--%>
+    <script type="text/javascript" src="/Scripts/jquery.validate.js"></script>
+    <script type="text/javascript" src="/Scripts/JQuery.cookie.js"></script>
+
+
+
+    <script type="text/javascript" src="/blind/jquery.lightbox.js"></script>
+    <script type="text/javascript" src="/blind/blind.js"></script>
+    <script type="text/javascript" src="/blind/Interface.js"></script>
+
+    <script type="text/javascript" src="/blind/JQuery.easing.js"></script>
+
+    <link rel="Stylesheet" href="/blind/blind.css" type="text/css" media="screen,projection" />
+    <link rel="Stylesheet" href="/blind/jquery.lightbox.css" type="text/css" />
+    <%-- <script type="text/javascript" src="/blind/WCAG.js"></script>--%>
+
+     <!-- use Coockie -->
+<script type="text/javascript" id="cookieinfo"
+	src="//cookieinfoscript.com/js/cookieinfo.min.js"
+    data-message="Этот сайт использует Coockie. Продолжая пользоваться сайтом, вы подтверждаете свое согласие на использование Coockie этим сайтом."
+    <script type="text/javascript" id="cookieinfo"
+	src="//cookieinfoscript.com/js/cookieinfo.min.js"
+    data-close-text="Согласен(-на)!"
+    data-linkmsg="Подробнее"
+    data-moreinfo ="https://ru.wikipedia.org/wiki/HTTP_cookie"
+
+    >
+</script>
+</head>
+<body>
+
+    <div id="main2">
+    
+
+    <div id="fvb" itemprop="Copy" style="z-index:99;background:#fff;position:fixed;right:0;top:0;
+border:2px solid #000;"><a href="http://finevision.ru/?hostname=tgp2.ru&path=/">
+Версия для слабовидящих</a></div>
+
+    <%--<div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Войти</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Добро пожаловать <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Выход" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+
+  <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Домашняя"/>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="О программе"/>
+                    </Items>
+                </asp:Menu>
+            </div>--%>
+            <script type="text/javascript">
+                (function (i, s, o, g, r, a, m) {
+                    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+                })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+                ga('create', 'UA-4806805-4', 'auto');
+                ga('send', 'pageview');
+
+</script>
+    <form runat="server">
+        <div id="container">
+            <div id="container-inner">
+               
+
+                <div id="header">
+                    <h1>
+                        <a href="#">МБУЗ "Городская поликлиника №2" г.Таганрог</a></h1>
+                    <p>
+                        работаем на благо Вашего здоровья
+                    </p>
+                    <div class="clear">
+                    </div>
+                </div>
+                <!-- end header -->
+        <div id="banner">
+            <div id="slogan">
+                <p>
+                    Болезнь легче <span class="slogan-big"><strong>предупредить,</strong></span><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;чем <span class="slogan-big"><strong>лечить</strong>&nbsp;последствия</span>
+
+                    <!-- end slogan -->
+            </div>
+
+           
+
+            <!-- end nav -->
+        </div> 
+                <div id="nav">
+        <%--        <ul>
+                  <siteMapNode url="" title=""  description="">
+  
+      <li> url="~/Default.aspx" title="ГЛАВНАЯ"  description="" </li>
+  
+    <li> url="~/Filials/Main.aspx?id=11" title="Структура"  description="" </li>
+                      <ul>
+    	  <siteMapNode url="~/Filials/Main.aspx?id=12" title="Администрация" description ="" />
+      
+		 <li> <a href="~/Filials/Main.aspx?id=1">Головная поликлиника</a></li>
+		 <li><a href="~/Filials/Main.aspx?id=3">Филиал №1</a></li>   
+		 <li><a href="~/Filials/Main.aspx?id=5">Филиал №2</a></li>  
+		 <li><a href="~/Filials/Main.aspx?id=6">Филиал №3</a></li> 
+        <li><a href="~/Filials/Main.aspx?id=7">Филиал №4</a></li>
+		  <li><a href="~/Filials/Main.aspx?id=8">Дневной стационар №1</a></li>
+		 <li> <a href ="~/Filials/Main.aspx?id=9">Дневной стационар №2</a></li>
+        <li> <a href="~/Filials/Main.aspx?id=13">Дневной стационар №3</a></li>
+	
+        <li> url="~/Docs/angst/врачи на 01.07.2019.pdf" title="Список врачей" description =""
+        </li>
+        </ul>
+        <siteMapNode url="" title="УСЛУГИ"  description="" >
+      <siteMapNode url="~/Uslugi/platnye.aspx" title="Платные" description ="" />
+      <siteMapNode url="~/Uslugi/oms.aspx" title="Бесплатные по полису ОМС" description ="" />
+          <siteMapNode url="~/DD" title="Диспансеризация" description ="" />
+	<siteMapNode url="~/Uslugi/XRay.aspx" title="Рентген-кабинет" description ="" />
+    </siteMapNode>
+        <siteMapNode url="http://Записьнаприем.рф/?f=1&_lpu=75863316@mis_bars"  title="Расписание"  description="" />
+		<siteMapNode url="~/Docs/" title="Документы"  description="">
+			
+    
+		</siteMapNode>
+		<siteMapNode url="~/URLs/" title="Ссылки"  description="">
+			
+		</siteMapNode>
+      <siteMapNode url="" title="Новости"  description="">
+		<siteMapNode url="~/News/" title="Новости"  description="" />
+			<siteMapNode url="~/History/Grech.aspx" title="История здания по ул Греческой"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="КОНТАКТЫ"  description="">
+      <siteMapNode url="~/Contacts.aspx" title="КОНТАКТЫ"  description="" />
+      <siteMapNode url="~/Claim/" title="Обратная связь"  description=""/>
+      <siteMapNode url="~/Vacancy.aspx" title="Вакансии"  description=""/>
+    <siteMapNode url="~/info/lawyers.aspx" title="Юридическая помощь"  description=""/>
+    <siteMapNode url="~/about.aspx" title="О нас"  description=""/>
+    </siteMapNode>
+    <siteMapNode url="https://zapisnapriemrostov.ru/?_lpu=75863316@mis_bars" title="Запись на прием"  description="" />
+      
+</ul>
+
+      </siteMapNode>--%>
+
+
+                <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1"
+                    StaticDisplayLevels="2" Orientation="Horizontal" RenderingMode="list">
+                    <StaticMenuStyle CssClass="MenuStyle" />
+                    <DynamicMenuStyle CssClass="MenuStyle" />
+                    <StaticMenuItemStyle CssClass="MenuItemStyle" />
+                    <DynamicMenuItemStyle CssClass="MenuItemStyle2" />
+
+                    <DynamicHoverStyle CssClass="menuhover" />
+                    <StaticHoverStyle CssClass="menuhover" />
+
+                    <DynamicItemTemplate>
+                        <%# Eval("Text") %>
+                    </DynamicItemTemplate>
+                    <StaticItemTemplate>
+                        <%# Eval("Text") %>
+                    </StaticItemTemplate>
+                </asp:Menu>
+
+            </div>
+        <!-- end banner -->
+       <div id="main">
+            <div id="content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+            <!-- end content -->
+          
+            <div class="clear">
+            </div>
+      </div>
+        <!-- end main -->
+ </div>
+    <!-- end container-inner -->
+   </div>
+        <!-- end container -->
+    <div id="containerFooter">
+      <%-- <br />
+        <a href="http://xn----dtbbebeca6fve.xn--p1ai/postavshchiki" target="_blank" title="Каталог организаций">
+            <img title="ГДЕ-ДЕШЕВО.РФ - Всероссийский портал выгодных предложений" src="http://xn----dtbbebeca6fve.xn--p1ai/images/deshevo.png"
+                alt="Каталог организаций" width="111" height="34" /></a>--%>
+    
+    <div id="footer">
+        <div>
+
+
+            <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Vacancy.aspx">Вакансии</asp:HyperLink>
+        &nbsp;|
+            <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/Contacts.aspx">Контакты</asp:HyperLink>
+        &nbsp;|
+            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Claim/Default.aspx">Обратная связь</asp:HyperLink>
+        &nbsp;|
+            <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Docs/politika-confidecialnosti.aspx">Политика конфидециальности</asp:HyperLink>
+        </div>
+        <p>
+            <asp:LoginName ID="LoginName1" runat="server" />
+            &copy; МБУЗ "ГП №2" 2004-2020.
+        </p>
+        <br />
+
+
+        <%--   <asp:LoginName ID="LoginName1" runat="server" />&copy; МБУЗ "ГП №2" 2014. Design by <a href="http://www.electrictowelrail.org.uk">
+                
+                Electric Towel Rail</a> | <a href="http://www.electrictowelrail.org.uk/bathroom-towel-rail/">
+                    Bathroom Towel Rail</a><br />--%>
+    </div>
+
+    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" SiteMapProvider="Mainsitemap" />
+    <!-- end footer -->
+        </div>
+    </form>
+         
+  </div>
+</body>
+</html>

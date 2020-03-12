@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="tgp2_site" Class="ContactsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=tgp2.ru,5433;Initial Catalog=tgp2_site;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="tgp2_siteConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Dolgnost" Member="Dolgnosts">
+    <Type Name="Dolgnost">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DolgnostName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="idDolgnostCategory" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Dolgnost_Sotrudniki" Member="Sotrudnikis" ThisKey="id" OtherKey="idDolgnost" Type="Sotrudniki" />
+      <Association Name="DolgnostCategor_Dolgnost" Member="DolgnostCategor" ThisKey="idDolgnostCategory" OtherKey="id" Type="DolgnostCategor" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DolgnostCategor" Member="DolgnostCategors">
+    <Type Name="DolgnostCategor">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CategoryName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="DolgnostCategor_Dolgnost" Member="Dolgnosts" ThisKey="id" OtherKey="idDolgnostCategory" Type="Dolgnost" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sotrudniki" Member="Sotrudnikis">
+    <Type Name="Sotrudniki">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Surname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MidName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DateOfBirth" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="IdCabinet" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dateStartWork" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="dateEndWork" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="dateStartOtpusk" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="dateEndOtpusk" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="idDolgnost" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Dolgnost_Sotrudniki" Member="Dolgnost" ThisKey="idDolgnost" OtherKey="id" Type="Dolgnost" IsForeignKey="true" />
+      <Association Name="Cabinet_Sotrudniki" Member="Cabinet" ThisKey="IdCabinet" OtherKey="id" Type="Cabinet" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NewsTable" Member="NewsTable">
+    <Type Name="NewsTable">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="del" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="UserCreate" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="UserEdit" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DateCreate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.filials" Member="filials">
+    <Type Name="filials">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="address" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="proezd" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="porjadokSortirovki" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WorkTime" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="idCabinetRukovoditelya" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idTelRegistratur" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idRukovoditel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="filials_Cabinet" Member="Cabinets" ThisKey="id" OtherKey="IDFilial" Type="Cabinet" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cabinet" Member="Cabinets">
+    <Type Name="Cabinet">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="cabinetName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="cabinetNum" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="IDFilial" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cabinetTel" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NotShow" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Cabinet_Sotrudniki" Member="Sotrudnikis" ThisKey="id" OtherKey="IdCabinet" Type="Sotrudniki" />
+      <Association Name="filials_Cabinet" Member="filials" ThisKey="IDFilial" OtherKey="id" Type="filials" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

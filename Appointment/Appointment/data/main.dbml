@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="AppointmentDB" Class="mainDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=msk.tgp2.ru,5433;Initial Catalog=AppointmentDB;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DefaultConnection" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Spec_Filial_ID" Member="Spec_Filial_ID">
+    <Type Name="Spec_Filial_ID">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDFilial" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDSpec" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDOrg" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Spec_Filial_ID_Vrach_Spec_ID" Member="Vrach_Spec_ID" ThisKey="id" OtherKey="IDSpec" Type="Vrach_Spec_ID" />
+      <Association Name="Specialnost_Spec_Filial_ID" Member="Specialnost" ThisKey="IDSpec" OtherKey="id" Type="Specialnost" IsForeignKey="true" />
+      <Association Name="OrgFilials_Spec_Filial_ID" Member="OrgFilials" ThisKey="IDFilial" OtherKey="id" Type="OrgFilials" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ObrazovanieVracha" Member="ObrazovanieVracha">
+    <Type Name="ObrazovanieVracha">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Obrazovanie" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="descr" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="ObrazovanieVracha_Vrach" Member="Vrach" ThisKey="id" OtherKey="ProfObrazovanieID" Type="Vrach" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CategoriiVracha" Member="CategoriiVracha">
+    <Type Name="CategoriiVracha">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CategoryName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="CategoriiVracha_Vrach" Member="Vrach" ThisKey="id" OtherKey="CategoryVrachaID" Type="Vrach" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Raspisanie" Member="Raspisanie">
+    <Type Name="Raspisanie">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID_SPEC_VRACH" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="DatePriem" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="StartPriem" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="EndPriem" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="intervalpriema" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Vrach_Spec_ID_Raspisanie" Member="Vrach_Spec_ID" ThisKey="ID_SPEC_VRACH" OtherKey="id" Type="Vrach_Spec_ID" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SpecNamesWithSpecIds" Member="SpecNamesWithSpecIds">
+    <Type Name="SpecNamesWithSpecIds">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDFilial" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDSpec" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDOrg" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SpecialnostName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ViewIntervalBySpec" Member="ViewIntervalBySpec">
+    <Type Name="ViewIntervalBySpec">
+      <Column Name="IntervalPriemaByDefault" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SpecialnostName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="IDSpec" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WorkTimeEndZapisi" Member="WorkTimeEndZapisi">
+    <Type Name="WorkTimeEndZapisi">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idFilial" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DayOfWeek" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="EndWorkTime" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="IsWorkDay" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="OrgFilials_WorkTimeEndZapisi" Member="OrgFilials" ThisKey="idFilial" OtherKey="id" Type="OrgFilials" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GosHollydays" Member="GosHollydays">
+    <Type Name="GosHollydays">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="descr" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Specialnost" Member="Specialnost">
+    <Type Name="Specialnost">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SpecialnostName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="SpecialnostDescr" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SpecFilID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IntervalPriemaByDefault" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdOrg" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Specialnost_Spec_Filial_ID" Member="Spec_Filial_ID" ThisKey="id" OtherKey="IDSpec" Type="Spec_Filial_ID" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Vrach" Member="Vrach">
+    <Type Name="Vrach">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Surname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MidName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TabelNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProfObrazovanieID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Certification" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="CategoryVrachaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fired" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BirthDay" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ObrUchr" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="PovyshKvalif" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="IdOrg" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Vrach_Vrach_Spec_ID" Member="Vrach_Spec_ID" ThisKey="id" OtherKey="IDVrach" Type="Vrach_Spec_ID" />
+      <Association Name="CategoriiVracha_Vrach" Member="CategoriiVracha" ThisKey="CategoryVrachaID" OtherKey="id" Type="CategoriiVracha" IsForeignKey="true" />
+      <Association Name="ObrazovanieVracha_Vrach" Member="ObrazovanieVracha" ThisKey="ProfObrazovanieID" OtherKey="id" Type="ObrazovanieVracha" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Log]" Member="Log">
+    <Type Name="Log">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="code" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idOrg" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Site" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="DateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ClientIPAddress" Type="System.String" DbType="NVarChar(70)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ViewByTalonId" Member="ViewByTalonId">
+    <Type Name="ViewByTalonId">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateTimePriem" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="status" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ReservedTill" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Surname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MidName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Certification" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Obrazovanie" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="CategoryName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SpecialnostName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="filialName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="filialAddress" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="OrgFullName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="VrachSpecID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OrgId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OrgDomainName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="OrgTestDomainName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="filialEmail" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Accepted" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ViewTalonsWithVrachAndOrg" Member="ViewTalonsWithVrachAndOrg">
+    <Type Name="ViewTalonsWithVrachAndOrg">
+      <Column Name="SpecialnostName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Surname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MidName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IDOrg" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VrachSpecId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VrachSpec_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateTimePriem" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="status" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ReservedTill" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ClientSurname" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ClientName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ClientMidname" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ClientSex" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ClientBirthday" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ClientEmail" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ClientPhone" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ClientAddress" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="ClientPolisNum" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="ClientPolisOrg" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DateTimeZapisi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ClientKarta" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Accepted" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="AcceptedDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AcceptedText" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="MessageToClientSent" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RNDCode" Type="System.String" DbType="NVarChar(6)" CanBeNull="true" />
+      <Column Name="IDFilial" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="filialName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Organization" Member="Organization">
+    <Type Name="Organization">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OrgShortName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="OrgFullName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="OrgINN" Type="System.String" DbType="NVarChar(12)" CanBeNull="true" />
+      <Column Name="OrgOGRN" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="OrgAddress" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="OrgHelpTel" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="OrgDomainName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="OrgTestDomainName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SMTPServer" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SMTPPort" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SMTPLogin" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SMTPPass" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SMTPMailFrom" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SMTPMailToDefault" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="SMTPSSL" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="OrgClaimFormAddress" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="Organization_OrgFilials" Member="OrgFilials" ThisKey="id" OtherKey="idOrganization" Type="OrgFilials" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OrgFilials" Member="OrgFilials">
+    <Type Name="OrgFilials">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FilialNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="filialName" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="filialHelpTel" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="filialAddress" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="filialDescription" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="idOrganization" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="filialEmail" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="FilialRegPhone" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="OrgFilials_Spec_Filial_ID" Member="Spec_Filial_ID" ThisKey="id" OtherKey="IDFilial" Type="Spec_Filial_ID" />
+      <Association Name="OrgFilials_WorkTimeEndZapisi" Member="WorkTimeEndZapisi" ThisKey="id" OtherKey="idFilial" Type="WorkTimeEndZapisi" />
+      <Association Name="Organization_OrgFilials" Member="Organization" ThisKey="idOrganization" OtherKey="id" Type="Organization" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Talons" Member="Talons">
+    <Type Name="Talons">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="VrachSpec_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateTimePriem" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="status" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ReservedTill" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ClientSurname" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ClientName" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ClientMidname" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ClientSex" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ClientBirthday" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ClientEmail" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="ClientPhone" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ClientAddress" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="ClientPolisNum" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="ClientPolisOrg" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DateTimeZapisi" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ClientKarta" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Accepted" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="AcceptedDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AcceptedText" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="MessageToClientSent" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="RNDCode" Type="System.String" DbType="NVarChar(6)" CanBeNull="true" />
+      <Column Name="UsedWCGAInt" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="UsedWCGAColourScheme" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="history" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="Vrach_Spec_ID_Talons" Member="Vrach_Spec_ID" ThisKey="VrachSpec_ID" OtherKey="id" Type="Vrach_Spec_ID" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Vrach_Spec_ID" Member="Vrach_Spec_ID">
+    <Type Name="Vrach_Spec_ID">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDVrach" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IDSpec" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdOrg" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="OsobennostPriema" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Association Name="Vrach_Spec_ID_Raspisanie" Member="Raspisanie" ThisKey="id" OtherKey="ID_SPEC_VRACH" Type="Raspisanie" />
+      <Association Name="Vrach_Spec_ID_Talons" Member="Talons" ThisKey="id" OtherKey="VrachSpec_ID" Type="Talons" />
+      <Association Name="Spec_Filial_ID_Vrach_Spec_ID" Member="Spec_Filial_ID" ThisKey="IDSpec" OtherKey="id" Type="Spec_Filial_ID" IsForeignKey="true" />
+      <Association Name="Vrach_Vrach_Spec_ID" Member="Vrach" ThisKey="IDVrach" OtherKey="id" Type="Vrach" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

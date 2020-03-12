@@ -1,0 +1,42 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="SiteWCGA.master.vb" Inherits="Appointment.SiteWCGA" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+   <meta charset="utf-8" />
+<%--    <meta name="viewport" content="width=device-width, initial-scale=1.0" />--%>
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title><%: Page.Title %> - Запись на прием</title>
+    <!-- ============ Google fonts ============ -->
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet'
+        type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800'
+        rel='stylesheet' type='text/css' />
+    <!-- ============ Add custom CSS here ============ -->
+    <link href="css/WCGA/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/WCGA/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/WCGA/font-awesome.css" rel="stylesheet" type="text/css" />
+
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    
+    <webopt:bundlereference runat="server" path="~/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

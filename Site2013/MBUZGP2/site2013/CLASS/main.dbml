@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="tgp2_site" Class="mainDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=tgp2.ru;Initial Catalog=tgp2_site;Persist Security Info=True;User ID=sa;Pooling=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="tgp2_siteConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Otdel" Member="Otdel">
+    <Type Name="Otdel">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="otdelName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="cabinetNum" Type="System.String" DbType="NVarChar(4)" CanBeNull="true" />
+      <Column Name="IDFilial" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Otdel_TelephoneOtdelov" Member="TelephoneOtdelov" ThisKey="id" OtherKey="idOtdel" Type="TelephoneOtdelov" />
+      <Association Name="filials_Otdel" Member="filials" ThisKey="IDFilial" OtherKey="id" Type="filials" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.filials" Member="filials">
+    <Type Name="filials">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="address" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="proezd" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="porjadokSortirovki" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="filials_Otdel" Member="Otdel" ThisKey="id" OtherKey="IDFilial" Type="Otdel" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TelephoneOtdelov" Member="TelephoneOtdelov">
+    <Type Name="TelephoneOtdelov">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idOtdel" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="telephoneNumber" Type="System.String" DbType="NChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="Otdel_TelephoneOtdelov" Member="Otdel" ThisKey="idOtdel" OtherKey="id" Type="Otdel" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

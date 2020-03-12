@@ -1,0 +1,1121 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+site2013
+</name>
+</assembly>
+<members>
+<member name="F:site2013.Login.RegisterHyperLink">
+	<summary>
+RegisterHyperLink элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Login.LoginUser">
+	<summary>
+LoginUser элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="P:site2013.My.MyWebExtension.Application">
+	<summary>
+ Возвращает информацию о текущем приложении.
+ </summary>
+</member><member name="P:site2013.My.MyWebExtension.Computer">
+	<summary>
+ Возвращает сведения о главном компьютере.
+ </summary>
+</member><member name="P:site2013.My.MyWebExtension.User">
+	<summary>
+ Возвращает сведения о текущем веб-пользователе.
+ </summary>
+</member><member name="P:site2013.My.MyWebExtension.Request">
+	<summary>
+ Возвращает объект Request.
+ </summary>
+</member><member name="P:site2013.My.MyWebExtension.Response">
+	<summary>
+ Возвращает объект Response.
+ </summary>
+</member><member name="P:site2013.My.MyWebExtension.Log">
+	<summary>
+ Возвращает объект журнала ASP.
+ </summary>
+</member><member name="P:site2013.My.MyWebExtension.WebServices">
+	<summary>
+ Предоставляет доступ к веб-службам, добавленным в этот проект.
+ </summary>
+</member><member name="T:site2013.My.MyWebExtension">
+	<summary>
+ Модуль, используемый для определения свойств, доступных в My Namespace для веб-проектов.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:site2013.ChangePassword.ChangeUserPassword">
+	<summary>
+Элемент управления ChangeUserPassword.
+</summary>
+	<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.News.DetailsView1">
+	<summary>
+DetailsView1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.News.GridView1">
+	<summary>
+GridView1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.News.Button1">
+	<summary>
+Button1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.News.LinqDataSource1">
+	<summary>
+LinqDataSource1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default6.Literal1">
+	<summary>
+Literal1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="P:site2013.My.Resources.Resources.ResourceManager">
+	<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member><member name="P:site2013.My.Resources.Resources.Culture">
+	<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member><member name="T:site2013.My.Resources.Resources">
+	<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member><member name="F:site2013._Default5.PanelMainForm">
+	<summary>
+PanelMainForm элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default5.DropDownList1">
+	<summary>
+DropDownList1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default5.TextBoxFIO">
+	<summary>
+TextBoxFIO элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default5.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default5.TextBoxAddress">
+	<summary>
+TextBoxAddress элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default5.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default5.TextBoxTelephone">
+	<summary>
+TextBoxTelephone элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default5.RegularExpressionValidator1">
+	<summary>
+RegularExpressionValidator1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default5.TextBoxEmail">
+	<summary>
+TextBoxEmail элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default5.RequiredFieldValidator3">
+	<summary>
+RequiredFieldValidator3 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default5.DropDownList2">
+	<summary>
+DropDownList2 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default5.TextBoxText">
+	<summary>
+TextBoxText элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default5.RequiredFieldValidator4">
+	<summary>
+RequiredFieldValidator4 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default5.FileUpload1">
+	<summary>
+FileUpload1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default5.LabelError">
+	<summary>
+LabelError элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default5.Button1">
+	<summary>
+Button1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default5.LinqDataSourceFilials">
+	<summary>
+LinqDataSourceFilials элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.KGL.HyperLink5">
+	<summary>
+HyperLink5 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.RateIndependent.HyperLink8">
+	<summary>
+HyperLink8 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.RateIndependent.HyperLink9">
+	<summary>
+HyperLink9 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.RateIndependent.HyperLink10">
+	<summary>
+HyperLink10 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.RateIndependent.HyperLink1">
+	<summary>
+HyperLink1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.RateIndependent.HyperLink2">
+	<summary>
+HyperLink2 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.RateIndependent.HyperLink3">
+	<summary>
+HyperLink3 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.RateIndependent.HyperLink4">
+	<summary>
+HyperLink4 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.RateIndependent.HyperLink5">
+	<summary>
+HyperLink5 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.RateIndependent.HyperLink6">
+	<summary>
+HyperLink6 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.RateIndependent.HyperLink7">
+	<summary>
+HyperLink7 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Site.HeadContent">
+	<summary>
+HeadContent элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Site.Menu1">
+	<summary>
+Menu1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Site.MainContent">
+	<summary>
+MainContent элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Site.LabelNew">
+	<summary>
+LabelNew элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Site.HyperLink1">
+	<summary>
+HyperLink1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Site.GridView1">
+	<summary>
+GridView1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Site.MasterNewsLinqDataSource1">
+	<summary>
+MasterNewsLinqDataSource1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Site.HyperLink2">
+	<summary>
+HyperLink2 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Site.HyperLink4">
+	<summary>
+HyperLink4 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Site.HyperLink3">
+	<summary>
+HyperLink3 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Site.LoginName1">
+	<summary>
+LoginName1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Site.SiteMapDataSource1">
+	<summary>
+SiteMapDataSource1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Contacts.PanelUser">
+	<summary>
+PanelUser элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Contacts.GridView1">
+	<summary>
+GridView1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Contacts.LinqDataSource1">
+	<summary>
+LinqDataSource1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Contacts.LinqDataSource3">
+	<summary>
+LinqDataSource3 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Contacts.LinqDataSource2">
+	<summary>
+LinqDataSource2 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Contacts.PanelAdmin">
+	<summary>
+PanelAdmin элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default1.PanelUser">
+	<summary>
+PanelUser элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default1.GridView1">
+	<summary>
+GridView1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default1.LinqDataSource1">
+	<summary>
+LinqDataSource1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default3.HyperLink2">
+	<summary>
+HyperLink2 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default3.HyperLink3">
+	<summary>
+HyperLink3 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default3.HyperLink4">
+	<summary>
+HyperLink4 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default3.HyperLink5">
+	<summary>
+HyperLink5 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default3.HyperLink6">
+	<summary>
+HyperLink6 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default3.HyperLink7">
+	<summary>
+HyperLink7 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default3.HyperLink8">
+	<summary>
+HyperLink8 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default3.HyperLink9">
+	<summary>
+HyperLink9 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default3.HyperLink10">
+	<summary>
+HyperLink10 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Register.RegisterUser">
+	<summary>
+Элемент управления RegisterUser.
+</summary>
+	<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Register.RegisterUserWizardStep">
+	<summary>
+Элемент управления RegisterUserWizardStep.
+</summary>
+	<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink25">
+	<summary>
+HyperLink25 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink26">
+	<summary>
+HyperLink26 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink1">
+	<summary>
+HyperLink1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink44">
+	<summary>
+HyperLink44 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink45">
+	<summary>
+HyperLink45 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink27">
+	<summary>
+HyperLink27 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink3">
+	<summary>
+HyperLink3 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink5">
+	<summary>
+HyperLink5 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink21">
+	<summary>
+HyperLink21 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink2">
+	<summary>
+HyperLink2 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink28">
+	<summary>
+HyperLink28 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink15">
+	<summary>
+HyperLink15 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink23">
+	<summary>
+HyperLink23 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink24">
+	<summary>
+HyperLink24 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink8">
+	<summary>
+HyperLink8 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink12">
+	<summary>
+HyperLink12 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink16">
+	<summary>
+HyperLink16 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink13">
+	<summary>
+HyperLink13 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink22">
+	<summary>
+HyperLink22 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink14">
+	<summary>
+HyperLink14 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink29">
+	<summary>
+HyperLink29 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink30">
+	<summary>
+HyperLink30 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink31">
+	<summary>
+HyperLink31 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink43">
+	<summary>
+HyperLink43 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink46">
+	<summary>
+HyperLink46 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink9">
+	<summary>
+HyperLink9 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink10">
+	<summary>
+HyperLink10 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink11">
+	<summary>
+HyperLink11 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink18">
+	<summary>
+HyperLink18 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink19">
+	<summary>
+HyperLink19 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink20">
+	<summary>
+HyperLink20 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink17">
+	<summary>
+HyperLink17 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink41">
+	<summary>
+HyperLink41 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink42">
+	<summary>
+HyperLink42 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink40">
+	<summary>
+HyperLink40 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink39">
+	<summary>
+HyperLink39 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink38">
+	<summary>
+HyperLink38 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink37">
+	<summary>
+HyperLink37 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink36">
+	<summary>
+HyperLink36 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink35">
+	<summary>
+HyperLink35 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink34">
+	<summary>
+HyperLink34 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink32">
+	<summary>
+HyperLink32 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink33">
+	<summary>
+HyperLink33 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013._Default2.HyperLink7">
+	<summary>
+HyperLink7 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.GNLS.HyperLink1">
+	<summary>
+HyperLink1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.GNLS.HyperLink2">
+	<summary>
+HyperLink2 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Main.Label1">
+	<summary>
+Label1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Main.Label2">
+	<summary>
+Label2 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Main.Label3">
+	<summary>
+Label3 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Main.Label4">
+	<summary>
+Label4 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Main.Label5">
+	<summary>
+Label5 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Main.Label7">
+	<summary>
+Label7 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Main.Label6">
+	<summary>
+Label6 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.Main.Label8">
+	<summary>
+Label8 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.platnye.GridView1">
+	<summary>
+GridView1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.platnye.LinqDataSource1">
+	<summary>
+LinqDataSource1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.platnye.LinqDataSource2">
+	<summary>
+LinqDataSource2 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.admin.head">
+	<summary>
+head элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.admin.form1">
+	<summary>
+form1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.admin.Menu1">
+	<summary>
+Menu1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.admin.LoginStatus1">
+	<summary>
+LoginStatus1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.admin.LoginName1">
+	<summary>
+LoginName1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.admin.SiteMapDataSource2">
+	<summary>
+SiteMapDataSource2 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.admin.ContentPlaceHolder1">
+	<summary>
+ContentPlaceHolder1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member><member name="F:site2013.admin.LoginView1">
+	<summary>
+LoginView1 элемент управления.
+</summary>
+	<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+</members>
+</doc>

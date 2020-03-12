@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="main">
+  <DataContextMoniker Name="/mainDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1f577785-0c77-4ea6-b308-ea72c8ed91de" absoluteBounds="4.125, 1.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/mainDataContext/Otdel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f3b0ddce-2f4e-4986-bf10-efa87604da9f" absoluteBounds="4.14, 2.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dc057409-acf9-490c-b631-2b5becdf3f13" absoluteBounds="1.125, 0.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/mainDataContext/filials" />
+      <nestedChildShapes>
+        <elementListCompartment Id="24e1d791-9ae5-46b1-8f9f-73ba1c9aa40c" absoluteBounds="1.1400000000000001, 0.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.125 : 2.04409912109375); (4.125 : 2.04409912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/mainDataContext/filials/filials_Otdel" />
+      <nodes>
+        <classShapeMoniker Id="dc057409-acf9-490c-b631-2b5becdf3f13" />
+        <classShapeMoniker Id="1f577785-0c77-4ea6-b308-ea72c8ed91de" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="486811a0-4509-49ba-bd42-cf45c88546fb" absoluteBounds="5.375, 3.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/mainDataContext/TelephoneOtdelov" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8dd780d5-c2af-4439-b08b-acc914eea278" absoluteBounds="5.39, 4.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.75 : 3.20359537760417); (5.75 : 3.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/mainDataContext/Otdel/Otdel_TelephoneOtdelov" />
+      <nodes>
+        <classShapeMoniker Id="1f577785-0c77-4ea6-b308-ea72c8ed91de" />
+        <classShapeMoniker Id="486811a0-4509-49ba-bd42-cf45c88546fb" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

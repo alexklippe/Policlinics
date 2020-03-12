@@ -1,0 +1,1542 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+sp1taganrog.ru
+</name>
+</assembly>
+<members>
+<member name="T:sp1taganrog.ru.My.MyWebExtension">
+ <summary>
+ Модуль, используемый для определения свойств, доступных в My Namespace для веб-проектов.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:sp1taganrog.ru.My.MyWebExtension.Computer">
+ <summary>
+ Возвращает информацию о главном компьютере.
+ </summary>
+</member>
+<member name="P:sp1taganrog.ru.My.MyWebExtension.User">
+ <summary>
+ Возвращает сведения о текущем веб-пользователе.
+ </summary>
+</member>
+<member name="P:sp1taganrog.ru.My.MyWebExtension.Request">
+ <summary>
+ Возвращает объект Request.
+ </summary>
+</member>
+<member name="P:sp1taganrog.ru.My.MyWebExtension.Response">
+ <summary>
+ Возвращает объект Response.
+ </summary>
+</member>
+<member name="P:sp1taganrog.ru.My.MyWebExtension.Log">
+ <summary>
+ Возвращает объект журнала ASP.
+ </summary>
+</member>
+<member name="T:sp1taganrog.ru.My.Resources.Resources">
+<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member>
+<member name="P:sp1taganrog.ru.My.Resources.Resources.ResourceManager">
+<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member>
+<member name="P:sp1taganrog.ru.My.Resources.Resources.Culture">
+<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member>
+<member name="F:sp1taganrog.ru.AddPhoneNumber._ErrorMessage">
+<summary>
+Элемент управления ErrorMessage.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.AddPhoneNumber._PhoneNumber">
+<summary>
+Элемент управления PhoneNumber.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Confirm._successPanel">
+<summary>
+Элемент управления successPanel.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Confirm._login">
+<summary>
+Элемент управления login.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Confirm._errorPanel">
+<summary>
+Элемент управления errorPanel.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ForgotPassword._loginForm">
+<summary>
+Элемент управления loginForm.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ForgotPassword._ErrorMessage">
+<summary>
+Элемент управления ErrorMessage.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ForgotPassword._FailureText">
+<summary>
+Элемент управления FailureText.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ForgotPassword._Email">
+<summary>
+Элемент управления Email.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ForgotPassword._DisplayEmail">
+<summary>
+Элемент управления DisplayEmail.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Login._ErrorMessage">
+<summary>
+Элемент управления ErrorMessage.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Login._FailureText">
+<summary>
+Элемент управления FailureText.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Login._Email">
+<summary>
+Элемент управления Email.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Login._Password">
+<summary>
+Элемент управления Password.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Login._RememberMe">
+<summary>
+Элемент управления RememberMe.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Login._RegisterHyperLink">
+<summary>
+Элемент управления RegisterHyperLink.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Login._OpenAuthLogin">
+<summary>
+Элемент управления OpenAuthLogin.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Manage._SuccessMessagePlaceHolder">
+ <summary>
+ Элемент управления SuccessMessagePlaceHolder.
+ </summary>
+ <remarks>
+ Автоматически созданное поле.
+ Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+ </remarks>
+</member>
+<member name="F:sp1taganrog.ru.Manage._ChangePassword">
+ <summary>
+ Элемент управления ChangePassword.
+ </summary>
+ <remarks>
+ Автоматически созданное поле.
+ Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+ </remarks>
+</member>
+<member name="F:sp1taganrog.ru.Manage._CreatePassword">
+ <summary>
+ Элемент управления CreatePassword.
+ </summary>
+ <remarks>
+ Автоматически созданное поле.
+ Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+ </remarks>
+</member>
+<member name="F:sp1taganrog.ru.Manage._PhoneNumber">
+ <summary>
+ Элемент управления PhoneNumber.
+ </summary>
+ <remarks>
+ Автоматически созданное поле.
+ Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+ </remarks>
+</member>
+<member name="F:sp1taganrog.ru.ManageLogins._SuccessMessagePlaceholder">
+<summary>
+Элемент управления SuccessMessagePlaceholder.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ManagePassword._setPassword">
+<summary>
+Элемент управления setPassword.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ManagePassword._password">
+<summary>
+Элемент управления password.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ManagePassword._confirmPassword">
+<summary>
+Элемент управления confirmPassword.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ManagePassword._changePasswordHolder">
+<summary>
+Элемент управления changePasswordHolder.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ManagePassword._CurrentPasswordLabel">
+<summary>
+Элемент управления CurrentPasswordLabel.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ManagePassword._CurrentPassword">
+<summary>
+Элемент управления CurrentPassword.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ManagePassword._NewPasswordLabel">
+<summary>
+Элемент управления NewPasswordLabel.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ManagePassword._NewPassword">
+<summary>
+Элемент управления NewPassword.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ManagePassword._ConfirmNewPasswordLabel">
+<summary>
+Элемент управления ConfirmNewPasswordLabel.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ManagePassword._ConfirmNewPassword">
+<summary>
+Элемент управления ConfirmNewPassword.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.OpenAuthProviders._providerDetails">
+<summary>
+Элемент управления providerDetails.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Register._ErrorMessage">
+<summary>
+Элемент управления ErrorMessage.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Register._Email">
+<summary>
+Элемент управления Email.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Register._Password">
+<summary>
+Элемент управления Password.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Register._ConfirmPassword">
+<summary>
+Элемент управления ConfirmPassword.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.RegisterExternalLogin._email">
+<summary>
+Элемент управления Email.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ResetPassword._ErrorMessage">
+<summary>
+Элемент управления ErrorMessage.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ResetPassword._Email">
+<summary>
+Элемент управления Email.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ResetPassword._Password">
+<summary>
+Элемент управления Password.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ResetPassword._ConfirmPassword">
+<summary>
+Элемент управления ConfirmPassword.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ResetPasswordConfirmation._login">
+<summary>
+Элемент управления login.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.TwoFactorAuthenticationSignIn._sendcode">
+<summary>
+Элемент управления sendcode.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.TwoFactorAuthenticationSignIn._Providers">
+<summary>
+Элемент управления Providers.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.TwoFactorAuthenticationSignIn._ProviderSubmit">
+<summary>
+Элемент управления ProviderSubmit.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.TwoFactorAuthenticationSignIn._verifycode">
+<summary>
+Элемент управления verifycode.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.TwoFactorAuthenticationSignIn._SelectedProvider">
+<summary>
+Элемент управления SelectedProvider.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.TwoFactorAuthenticationSignIn._ErrorMessage">
+<summary>
+Элемент управления ErrorMessage.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.TwoFactorAuthenticationSignIn._FailureText">
+<summary>
+Элемент управления FailureText.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.TwoFactorAuthenticationSignIn._Code">
+<summary>
+Элемент управления Code.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.TwoFactorAuthenticationSignIn._RememberBrowser">
+<summary>
+Элемент управления RememberBrowser.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.TwoFactorAuthenticationSignIn._CodeSubmit">
+<summary>
+Элемент управления CodeSubmit.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.VerifyPhoneNumber._ErrorMessage">
+<summary>
+Элемент управления ErrorMessage.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.VerifyPhoneNumber._PhoneNumber">
+<summary>
+Элемент управления PhoneNumber.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.VerifyPhoneNumber._Code">
+<summary>
+Элемент управления Code.
+</summary>
+<remarks>
+Автоматически созданное поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.nalog19._HyperLink2">
+<summary>
+HyperLink2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.nalog19._HyperLink3">
+<summary>
+HyperLink3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.nalog19._HyperLink4">
+<summary>
+HyperLink4 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.nalog19._HyperLink5">
+<summary>
+HyperLink5 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.perepis19._HyperLink2">
+<summary>
+HyperLink2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.claim._PanelMainForm">
+<summary>
+PanelMainForm элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.claim._DropDownList1">
+<summary>
+DropDownList1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.claim._TextBoxFIO">
+<summary>
+TextBoxFIO элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.claim._RequiredFieldValidator1">
+<summary>
+RequiredFieldValidator1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.claim._TextBoxAddress">
+<summary>
+TextBoxAddress элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.claim._RequiredFieldValidator2">
+<summary>
+RequiredFieldValidator2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.claim._TextBoxTelephone">
+<summary>
+TextBoxTelephone элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.claim._RegularExpressionValidator1">
+<summary>
+RegularExpressionValidator1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.claim._TextBoxEmail">
+<summary>
+TextBoxEmail элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.claim._RequiredFieldValidator3">
+<summary>
+RequiredFieldValidator3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.claim._TextBoxText">
+<summary>
+TextBoxText элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.claim._RequiredFieldValidator4">
+<summary>
+RequiredFieldValidator4 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.claim._FileUpload1">
+<summary>
+FileUpload1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.claim._LabelError">
+<summary>
+LabelError элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.claim._Button1">
+<summary>
+Button1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.claim._PanelResult">
+<summary>
+PanelResult элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.claim._LabelErrorPanel">
+<summary>
+LabelErrorPanel элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru._Default._Panel1">
+<summary>
+Panel1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru._Default._HyperLink3">
+<summary>
+HyperLink3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru._Default._HyperLink2">
+<summary>
+HyperLink2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru._Default._Panel2">
+<summary>
+Panel2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru._Default._HyperLink4">
+<summary>
+HyperLink4 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru._Default._HyperLink5">
+<summary>
+HyperLink5 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru._Default._HyperLink1">
+<summary>
+HyperLink1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru._Default._HyperLink6">
+<summary>
+HyperLink6 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru._Default._Image1">
+<summary>
+Image1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Doctors._HyperLink1">
+<summary>
+HyperLink1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.links._HyperLink2">
+<summary>
+HyperLink2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.links._HyperLink3">
+<summary>
+HyperLink3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.links._HyperLink4">
+<summary>
+HyperLink4 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.links._HyperLink5">
+<summary>
+HyperLink5 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.links._HyperLink6">
+<summary>
+HyperLink6 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.links._HyperLink7">
+<summary>
+HyperLink7 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.links._HyperLink1">
+<summary>
+HyperLink1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.links._HyperLink9">
+<summary>
+HyperLink9 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.links._HyperLink10">
+<summary>
+HyperLink10 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.HIV._Image2">
+<summary>
+Image2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.HIV._HyperLink3">
+<summary>
+HyperLink3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Osteoporoz._Image2">
+<summary>
+Image2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Pamyatka._HyperLink1">
+<summary>
+HyperLink1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Pamyatka._HyperLink2">
+<summary>
+HyperLink2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Polozhenije._HyperLink1">
+<summary>
+HyperLink1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Polozhenije._HyperLink4">
+<summary>
+HyperLink4 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Polozhenije._HyperLink5">
+<summary>
+HyperLink5 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Polozhenije._HyperLink6">
+<summary>
+HyperLink6 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Polozhenije._HyperLink3">
+<summary>
+HyperLink3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink2">
+<summary>
+HyperLink2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink27">
+<summary>
+HyperLink27 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink3">
+<summary>
+HyperLink3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink4">
+<summary>
+HyperLink4 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink5">
+<summary>
+HyperLink5 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink24">
+<summary>
+HyperLink24 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink28">
+<summary>
+HyperLink28 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink6">
+<summary>
+HyperLink6 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink29">
+<summary>
+HyperLink29 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink7">
+<summary>
+HyperLink7 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink1">
+<summary>
+HyperLink1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink9">
+<summary>
+HyperLink9 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink15">
+<summary>
+HyperLink15 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink12">
+<summary>
+HyperLink12 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink26">
+<summary>
+HyperLink26 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink23">
+<summary>
+HyperLink23 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink32">
+<summary>
+HyperLink32 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink10">
+<summary>
+HyperLink10 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink22">
+<summary>
+HyperLink22 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink14">
+<summary>
+HyperLink14 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink25">
+<summary>
+HyperLink25 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink8">
+<summary>
+HyperLink8 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink11">
+<summary>
+HyperLink11 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink20">
+<summary>
+HyperLink20 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink21">
+<summary>
+HyperLink21 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink19">
+<summary>
+HyperLink19 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink13">
+<summary>
+HyperLink13 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink17">
+<summary>
+HyperLink17 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink16">
+<summary>
+HyperLink16 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink18">
+<summary>
+HyperLink18 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink30">
+<summary>
+HyperLink30 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Reglament._HyperLink31">
+<summary>
+HyperLink31 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Route._Image1">
+<summary>
+Image1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.SiteMaster._Image1">
+<summary>
+Image1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.SiteMaster._MainContent">
+<summary>
+MainContent элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.SiteMaster._HyperLink1">
+<summary>
+HyperLink1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.PriceStatic._HyperLink5">
+<summary>
+HyperLink5 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.PriceStatic._HyperLink1">
+<summary>
+HyperLink1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.PriceStatic._HyperLink7">
+<summary>
+HyperLink7 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.PriceStatic._HyperLink2">
+<summary>
+HyperLink2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.PriceStatic._HyperLink3">
+<summary>
+HyperLink3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.PriceStatic._HyperLink4">
+<summary>
+HyperLink4 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.PriceStatic._HyperLink6">
+<summary>
+HyperLink6 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.PriceStatic._HyperLink8">
+<summary>
+HyperLink8 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.PriceStatic._HyperLink9">
+<summary>
+HyperLink9 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.VidUslug._HyperLink2">
+<summary>
+HyperLink2 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.VidUslug._HyperLink1">
+<summary>
+HyperLink1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.VidUslug._HyperLink3">
+<summary>
+HyperLink3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.GRIPP._HyperLink3">
+<summary>
+HyperLink3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Vakcine._Image1">
+<summary>
+Image1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.SPID._HyperLink3">
+<summary>
+HyperLink3 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.ZOZH._HyperLink1">
+<summary>
+HyperLink1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Site_Mobile._Head1">
+<summary>
+Head1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Site_Mobile._form1">
+<summary>
+form1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Site_Mobile._Image1">
+<summary>
+Image1 элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Site_Mobile._FeaturedContent">
+<summary>
+FeaturedContent элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.Site_Mobile._MainContent">
+<summary>
+MainContent элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+<member name="F:sp1taganrog.ru.WorkTime._HyperLinkEmail">
+<summary>
+HyperLinkEmail элемент управления.
+</summary>
+<remarks>
+Автоматически создаваемое поле.
+Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+</remarks>
+</member>
+</members>
+</doc>
